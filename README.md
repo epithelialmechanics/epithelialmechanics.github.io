@@ -1,6 +1,8 @@
 # Epithelial Mechanics Fan Club
 
-![](epimechfc.jpg)
+<div style="text-align: center;">
+    <img src="epimechfc.jpg" alt="Description" height="300">
+</div>
 
 We're your source for papers on various #EpithelialMechanics topics📚
 Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
