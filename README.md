@@ -32,10 +32,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
+<bsky-embed
+   username="epimechfc.bsky.social"
+   mode="thread"
+   thread-id="3lbijuofirk2t" 
+   limit="1"
+   disable-images="false"
+   disable-videos="false"
+   disable-autoplay="true"
+>
+</bsky-embed>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
  <bsky-embed
    username="epimechfc.bsky.social"
    mode=""
-   limit="10"
+   limit="5"
    disable-images="false"
    disable-videos="False"
    disable-autoplay="true"
