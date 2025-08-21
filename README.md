@@ -29,3 +29,15 @@ The account is managed by:
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB7SVRH3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
+ <bsky-embed
+   username="epimechfc.bsky.social"
+   mode=""
+   limit="10"
+   disable-images="false"
+   disable-videos="False"
+   disable-autoplay="true"
+ >
+ </bsky-embed>
