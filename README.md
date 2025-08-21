@@ -1,4 +1,4 @@
-
+<head>
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1Y22TBWNZ"></script>
 <script>
@@ -8,6 +8,7 @@
 
   gtag('config', 'G-G1Y22TBWNZ');
 </script>
+</head>
 
 <div style="text-align: center;">
     <img src="epimechfc.jpg" alt="Description" height="300">
