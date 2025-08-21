@@ -1,14 +1,3 @@
-<head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KB7SVRH3');</script>
-<!-- End Google Tag Manager -->
-</head>
-
-# Epithelial Mechanics Fan Club
 
 <div style="text-align: center;">
     <img src="epimechfc.jpg" alt="Description" height="300">
@@ -24,24 +13,6 @@ We provide a platform for interaction and networking for early career researcher
 The account is managed by:
 - Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
 - Dr. [Julia Eckert](https://bsky.app/profile/juliaeckert.bsky.social), the University of Queensland, Australia
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB7SVRH3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
-<bsky-embed
-   username="epimechfc.bsky.social"
-   mode="thread"
-   thread-id="3lbijuofirk2t" 
-   limit="1"
-   disable-images="false"
-   disable-videos="false"
-   disable-autoplay="true"
->
-</bsky-embed>
 
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
