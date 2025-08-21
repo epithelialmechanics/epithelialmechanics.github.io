@@ -1,4 +1,14 @@
 
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G1Y22TBWNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G1Y22TBWNZ');
+</script>
+
 <div style="text-align: center;">
     <img src="epimechfc.jpg" alt="Description" height="300">
 </div>
@@ -14,6 +24,7 @@ The account is managed by:
 - Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
 - Dr. [Julia Eckert](https://bsky.app/profile/juliaeckert.bsky.social), the University of Queensland, Australia
 
+Here's our live feed, and [click here](https://bsky.app/profile/epimechfc.bsky.social) for more.
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
  <bsky-embed
