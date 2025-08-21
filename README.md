@@ -25,15 +25,18 @@ The account is managed by:
 - Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
 - Dr. [Julia Eckert](https://bsky.app/profile/juliaeckert.bsky.social), the University of Queensland, Australia
 
-Here's our live feed, and [click here](https://bsky.app/profile/epimechfc.bsky.social) for more.
+Here's our live feed:
+<div style="max-width: 400px; margin: auto;">
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
  <bsky-embed
-   username="epimechfc.bsky.social"
-   mode=""
-   limit="5"
-   disable-images="false"
-   disable-videos="False"
-   disable-autoplay="true"
- >
- </bsky-embed>
+    username="epimechfc.bsky.social"
+    mode=""
+    limit="5"
+    disable-images="false"
+    disable-videos="False"
+    disable-autoplay="true"
+    load-more="true"
+>
+</bsky-embed>
+</div>
