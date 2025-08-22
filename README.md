@@ -14,7 +14,7 @@
     <img src="epimechfc.jpg" alt="Description" height="300">
 </div>
 
-We're your source for papers on various #EpithelialMechanics topics📚
+We are your source for papers on various #EpithelialMechanics topics📚
 Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
 
 We share one paper each working day and create mini-review threads on topics that matter to the epithelial mechanics community, gathered directly from our online community.
