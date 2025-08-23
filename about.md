@@ -7,11 +7,6 @@ images:
 
 ---
 
-SOURCE=~/new-projects/epimechfc/nchahare.github.io
-DESTI=~/new-projects/epithelialmechanics.github.io
-
-
-
 We're your source for papers on various #EpithelialMechanics topics📚
 Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
 
