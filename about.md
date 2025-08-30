@@ -6,13 +6,10 @@ images:
   - /assets/img/meme2024.jpg
 
 ---
-<p align="justify">
 The Epithelial Mechanics Fan Club is a vibrant, non-profit platform dedicated to sharing papers on various #EpithelialMechanics topics and mini-review [threads](https://epithelialmechanics.github.io/threads/) by our [delegates](https://epithelialmechanics.github.io/delegates/). Currently, we are operating accounts on [Bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [X](https://x.com/EpiMechFC), fostering a global network of early-career researchers.
-</p>
 
-<p align="justify">
-Nimesh Chahare started the Twitter account on July 23, 2023, and shortly thereafter, Julia Eckert joined him in running the club together. Since then, our community of passionate scientists has been constantly growing and has become a platform for transparent knowledge exchange, collaboration, and career support.
-</p><br>
+
+Nimesh Chahare started the Twitter account on July 23, 2023, and shortly thereafter, Julia Eckert joined him in running the club together. Since then, our community of passionate scientists has been constantly growing and has become a platform for transparent knowledge exchange, collaboration, and career support. <br><br>
 
 
 The Epithelial Mechanics Fan Club is currently managed by:
