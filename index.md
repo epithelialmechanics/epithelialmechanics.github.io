@@ -18,7 +18,7 @@ Hello!
 
 Welcome to our Epithelial Mechanics Fan Club website! 
 
-We provide a platform for interaction and networking for early career researcher and share, with your support, topics related to #EpithelialMechanics. 
+We provide a platform for interaction and networking for early career researchers and share, with your support, topics related to #EpithelialMechanics. 
 
 
 
