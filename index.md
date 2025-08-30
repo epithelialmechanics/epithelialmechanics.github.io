@@ -13,6 +13,17 @@ seo_description: We're your source for papers on various Epithelial Mechanics to
     <img src="assets/img/epimechfc.jpg" alt="Epithelial Mechanics Fan Club" width="500">
 </div>
 
+
+Hello! 
+
+Welcome to our Epithelial Mechanics Fan Club website! 
+
+We provide a platform for interaction and networking for early career researcher and share, with your support, topics related to #EpithelialMechanics. 
+
+
+
+<!--
+
 We're your source for papers on various #EpithelialMechanics topics📚
 Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
 
@@ -22,9 +33,9 @@ We provide a platform for interaction and networking for early career researcher
 
 The account is managed by:
 - Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
-- Dr. [Julia Eckert](https://bsky.app/profile/juliaeckert.bsky.social), the University of Queensland, Australia
+- Dr. [Julia Eckert](https://julia-eckert.github.io), The University of Queensland, Australia
 
-
+-->
 
 Here's our live feed:
 <div style="max-width: 500px; margin: auto;">
