@@ -18,24 +18,8 @@ Hello!
 
 Welcome to our Epithelial Mechanics Fan Club website! 
 
-We provide a platform for interaction and networking for early career researchers and share, with your support, topics related to #EpithelialMechanics. 
+We provide a platform for interaction and networking for early career researchers and share, with your support, topics related to #EpithelialMechanics. <br><br>
 
-
-
-<!--
-
-We're your source for papers on various #EpithelialMechanics topics📚
-Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
-
-We share one paper each working day and create mini-review threads on topics that matter to the epithelial mechanics community, gathered directly from our online community.
-
-We provide a platform for interaction and networking for early career researchers. If you'd like to showcase your field, paper, or a topic that interests you, please feel free to contact us.
-
-The account is managed by:
-- Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
-- Dr. [Julia Eckert](https://julia-eckert.github.io), The University of Queensland, Australia
-
--->
 
 Here's our live feed:
 <div style="max-width: 500px; margin: auto;">
@@ -52,3 +36,18 @@ Here's our live feed:
 >
 </bsky-embed>
 </div>
+
+<!--
+
+We're your source for papers on various #EpithelialMechanics topics📚
+Check out our accounts on [bluesky](https://bsky.app/profile/epimechfc.bsky.social) and [twitter](https://x.com/EpiMechFC).
+
+We share one paper each working day and create mini-review threads on topics that matter to the epithelial mechanics community, gathered directly from our online community.
+
+We provide a platform for interaction and networking for early career researchers. If you'd like to showcase your field, paper, or a topic that interests you, please feel free to contact us.
+
+The account is managed by:
+- Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social), Columbia University, USA
+- Dr. [Julia Eckert](https://julia-eckert.github.io), The University of Queensland, Australia
+
+-->
