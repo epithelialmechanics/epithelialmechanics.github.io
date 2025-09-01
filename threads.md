@@ -3,6 +3,9 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
+  - {path: /assets/threads/20231127.png, caption: "About hydraulic fracking ", description: "by Nimesh Chahare", date: "27/11/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lm2lnm2aks2c}
+  - {path: /assets/threads/20231114.png, caption: "About epithelial buckling ", description: "by Nimesh Chahare", date: "14/11/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lpyry4hik22m}
+  - {path: /assets/threads/20231029.png, caption: "About optogenetics ", description: "by Guillermo Martínez Ara", date: "29/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lh3x5xxs322s}
   - {path: /assets/threads/20231015.png, caption: "About mechanics of hPSCs ", description: "by Miquel Bosch", date: "15/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lfjqw42hot2e}
   - {path: /assets/threads/20231001.png, caption: "About adherens junctions ", description: "by Isabela Fortunato", date: "01/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lfyyxwqru22l}
   - {path: /assets/threads/20230910.png, caption: "About inplane mechanical forces on epithelial tissues ", description: "by Mathieu Dedenon", date: "10/09/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lhniocktj22n}
