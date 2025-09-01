@@ -3,7 +3,15 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
-  - {path: /assets/threads/20250304.png, caption: "About tricellular vertices ", description: "by Kate Cavanaugh", date: "04/03/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ljwgtshjhk2i}
+  - {path: /assets/threads/20250831.png, caption: "About differential adhesion ", description: "by Benjamin J Swedlund", date: "31/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lxozze5pv22i}
+  - {path: /assets/threads/20250810.png, caption: "About cyclic loading ", description: "by Lucia Baldauf & Eleni Papafilippou", date: "10/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvzpfvnu3k2e} 
+  - {path: /assets/threads/20250720.png, caption: "About in vivo measurements ", description: "by Arthur Michaut", date: "20/07/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3luevq5azf62i}
+  - {path: /assets/threads/20250629.png, caption: "About epithelial morphogenesis ", description: "by Neha Ghosh", date: "29/06/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lsq2ypalhs2p}
+  - {path: /assets/threads/20250608.png, caption: "About image analysis software ", description: "by Julia Eckert", date: "08/06/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lr3c5eoyd22p}
+  - {path: /assets/threads/20250511.png, caption: "About fluid-like and solid-like tissues ", description: "by Nimesh Chahare & Julia Eckert", date: "11/05/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lovjbjgagc2l}
+  - {path: /assets/threads/20250420.png, caption: "About epithelial/mesenchymal collective cell migration ", description: "by Maik Bischoff", date: "20/04/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lna4yoorbk2p}
+  - {path: /assets/threads/20250330.png, caption: "About mechanochemical ERK activity waves ", description: "by Lara Hundsdorfer", date: "30/03/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lllen63hxs2s}
+  - {path: /assets/threads/20250309.png, caption: "About tricellular vertices ", description: "by Kate Cavanaugh", date: "09/03/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ljwgtshjhk2i}
   - {path: /assets/threads/20250216.png, caption: "About investigating cellular mechanical states ", description: "by Andreas Schönit & Lucas Anger", date: "16/02/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3libnuwdaqk26}
   - {path: /assets/threads/20250126.png, caption: "About counter rotating flows ", description: "by Nimesh Chahare", date: "26/01/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lgndug7cek26}
   - {path: /assets/threads/20241215.png, caption: "About mechano-metabolism ", description: "by Eirini Maniou & Makis Ampartzidis", date: "15/12/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ldbihhb3ns2z}
