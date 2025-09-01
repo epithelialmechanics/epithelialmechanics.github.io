@@ -3,6 +3,10 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
+  - {path: /assets/threads/20240128.png, caption: "About epithelial nematics ", description: "by Julia Eckert", date: "28/01/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ljce2nk55c23}
+  - {path: /assets/threads/20240114.png, caption: "About epithelial lumens ", description: "by Dhiraj Indana", date: "14/01/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ldsjjhtbqk2i}
+  - {path: /assets/threads/20231224.png, caption: "About actomyosin related drugs ", description: "by Valeria Venturini", date: "24/12/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lpfylchpqs2e}
+  - {path: /assets/threads/20231210.png, caption: "About intermediate filaments ", description: "by Tom Golde", date: "10/12/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3kg7fsmww2k2s}
   - {path: /assets/threads/20231127.png, caption: "About hydraulic fracking ", description: "by Nimesh Chahare", date: "27/11/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lm2lnm2aks2c}
   - {path: /assets/threads/20231114.png, caption: "About epithelial buckling ", description: "by Nimesh Chahare", date: "14/11/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lpyry4hik22m}
   - {path: /assets/threads/20231029.png, caption: "About optogenetics ", description: "by Guillermo Martínez Ara", date: "29/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lh3x5xxs322s}
