@@ -20,7 +20,7 @@ images:
       </a>
       <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>
-      <div class="image-description"> image.date <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a></div>
+      <div class="image-description">{{ image.date }} <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a></div>
     </div>
   {% endfor %}
 </div>
