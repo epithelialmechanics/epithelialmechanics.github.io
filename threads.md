@@ -4,7 +4,7 @@ title: Threads
 permalink: /threads/
 images:
   - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
-  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare \n (13/08/2023)", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare", date: "13/08/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
 ---
 
 
@@ -20,7 +20,7 @@ images:
       </a>
       <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>
-      <div class="image-caption"> <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a>a</div>
+      <div class="image-description"> image.date <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a></div>
     </div>
   {% endfor %}
 </div>
@@ -28,7 +28,7 @@ images:
 <style>
   .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
