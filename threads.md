@@ -3,6 +3,10 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
+  - {path: /assets/threads/20240324.png, caption: "About cell-cell contact and patterning  ", description: "by Feyza Nur Arslan", date: "24/03/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3loaupdehud2w}
+  - {path: /assets/threads/20240310.png, caption: "About interfacial tension  ", description: "by Clément Hallopeau", date: "10/03/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lnrfjgwjq225}
+  - {path: /assets/threads/20240225.png, caption: "About apoptotic extrusion  ", description: "by Zoya Mann", date: "25/02/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3liqorp2s7s27}
+  - {path: /assets/threads/20240211.png, caption: "About tissue actuation ", description: "by Abdel Rahman Abdel Fattah", date: "11/02/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkz6aaiymk2g}
   - {path: /assets/threads/20240128.png, caption: "About epithelial nematics ", description: "by Julia Eckert", date: "28/01/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ljce2nk55c23}
   - {path: /assets/threads/20240114.png, caption: "About epithelial lumens ", description: "by Dhiraj Indana", date: "14/01/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ldsjjhtbqk2i}
   - {path: /assets/threads/20231224.png, caption: "About actomyosin related drugs ", description: "by Valeria Venturini", date: "24/12/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lpfylchpqs2e}
