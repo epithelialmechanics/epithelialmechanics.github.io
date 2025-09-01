@@ -3,9 +3,8 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
-  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n <a href="https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m">Bluesky</a>"}
-  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n <a href="https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m">Bluesky</a>"}
-
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m"}
 ---
 
 
@@ -21,6 +20,7 @@ images:
       </a>
       <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>
+      <div class="image-caption"> <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a>a</div>
     </div>
   {% endfor %}
 </div>
