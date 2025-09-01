@@ -4,7 +4,7 @@ title: Threads
 permalink: /threads/
 images:
   - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
-  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m"}
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare \n (13/08/2023)", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
 ---
 
 
