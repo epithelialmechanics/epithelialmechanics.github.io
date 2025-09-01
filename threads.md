@@ -3,7 +3,14 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
-  - {path: /assets/threads/20240616.png, caption: "About rotating tissues  ", description: "by Nimesh Chahare", date: "16/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lx2fkp2krn22}    
+  - {path: /assets/threads/20250304.png, caption: "About tricellular vertices ", description: "by Kate Cavanaugh", date: "04/03/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ljwgtshjhk2i}
+  - {path: /assets/threads/20250216.png, caption: "About investigating cellular mechanical states ", description: "by Andreas Schönit & Lucas Anger", date: "16/02/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3libnuwdaqk26}
+  - {path: /assets/threads/20250126.png, caption: "About counter rotating flows ", description: "by Nimesh Chahare", date: "26/01/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lgndug7cek26}
+  - {path: /assets/threads/20241215.png, caption: "About mechano-metabolism ", description: "by Eirini Maniou & Makis Ampartzidis", date: "15/12/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ldbihhb3ns2z}
+  - {path: /assets/threads/20241201.png, caption: "About collective cell migration ", description: "by Leone Rossetti", date: "01/12/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lcaajuncns2u}
+  - {path: /assets/threads/20241117.png, caption: "About traction force microscopy  ", description: "by Nimesh Chahare & Julia Eckert", date: "17/11/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lb4x74fl222a}
+   
+  - {path: /assets/threads/20240616.png, caption: "About rotating tissues  ", description: "by Nimesh Chahare", date: "16/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lx2fkp2krn22}
   - {path: /assets/threads/20240602.png, caption: "About topological defect-mediated morphogenesis ", description: "by Yamini Ravichandran", date: "02/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ltszpeucir2b}
   - {path: /assets/threads/20240519.png, caption: "About micropatterning ", description: "by Vina Putra", date: "19/05/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvffg7wcgs25}
   - {path: /assets/threads/20240505.png, caption: "About neural tube formation ", description: "by Jianxiong Wang", date: "05/05/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ls3wkzr5os2d}
