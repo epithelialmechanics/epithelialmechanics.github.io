@@ -2,7 +2,64 @@
 layout: default
 title: Threads
 permalink: /threads/
+images:
+  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
+  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
+  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
+  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
+  - {path: /assets/people/JE.png, caption: "Co-organizer",  description: "Julia Eckert, Ph.D.\n University of Queensland \n Brisbane, Australia"}
 ---
+
+
+<div class="gallery">
+  {% for image in page.images %}
+    <div class="gallery-item">
+      <a href="{{ site.baseurl }}{{ image.path }}">
+        <img src="{{ site.baseurl }}{{ image.path }}"/>
+      </a>
+      <div class="image-caption">{{ image.caption }}</div>
+      <div class="image-description">{{ image.description | newline_to_br }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+
+
+
+
+<!--
 
 <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
@@ -166,7 +223,7 @@ class="bluesky-embed"
 data-bluesky-uri="at://did:plc:nilglqv27cobounbak6u24cl/app.bsky.feed.post/3lvzpfvnu3k2e" data-bluesky-embed-color-mode="system">
 </blockquote>
 
-
+-->
 
 
 
