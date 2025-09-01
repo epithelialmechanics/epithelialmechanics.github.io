@@ -3,12 +3,14 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
-  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
-  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
-  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
-  - {path: /assets/people/NC.jpg, caption: "Founder & Convenor ", description: "Nimesh Chahare, Ph.D.\n Columbia University \n New York, USA"}
-  - {path: /assets/people/JE.png, caption: "Co-organizer",  description: "Julia Eckert, Ph.D.\n University of Queensland \n Brisbane, Australia"}
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n <a href="https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m">Bluesky</a>"}
+  - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare\n <a href="https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m">Bluesky</a>"}
+
 ---
+
+
+
+
 
 
 <div class="gallery">
