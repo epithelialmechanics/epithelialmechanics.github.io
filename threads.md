@@ -3,6 +3,12 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
+  - {path: /assets/threads/20240616.png, caption: "About rotating tissues  ", description: "by Nimesh Chahare", date: "16/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lx2fkp2krn22}    
+  - {path: /assets/threads/20240602.png, caption: "About topological defect-mediated morphogenesis ", description: "by Yamini Ravichandran", date: "02/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ltszpeucir2b}
+  - {path: /assets/threads/20240519.png, caption: "About micropatterning ", description: "by Vina Putra", date: "19/05/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvffg7wcgs25}
+  - {path: /assets/threads/20240505.png, caption: "About neural tube formation ", description: "by Jianxiong Wang", date: "05/05/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ls3wkzr5os2d}
+  - {path: /assets/threads/20240421.png, caption: "About spatio-temporal regulation of cell proliferation  ", description: "by Mathieu Dedenon", date: "21/04/2024", bluesky: https://bsky.app/profile/did:plc:nilglqv27cobounbak6u24cl/post/3lrnktl6edk2s}
+  - {path: /assets/threads/20240404.png, caption: "About mechanical cell competition  ", description: "by Akshar Rao", date: "04/04/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lcqpeja7xc2a}
   - {path: /assets/threads/20240324.png, caption: "About cell-cell contact and patterning  ", description: "by Feyza Nur Arslan", date: "24/03/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3loaupdehud2w}
   - {path: /assets/threads/20240310.png, caption: "About interfacial tension  ", description: "by Clément Hallopeau", date: "10/03/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lnrfjgwjq225}
   - {path: /assets/threads/20240225.png, caption: "About apoptotic extrusion  ", description: "by Zoya Mann", date: "25/02/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3liqorp2s7s27}
