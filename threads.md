@@ -52,9 +52,12 @@ images:
       <a href="{{ site.baseurl }}{{ image.path }}">
         <img src="{{ site.baseurl }}{{ image.path }}"/>
       </a>
-      <div class="image-caption">{{ image.caption }}</div>
+      <div class="image-caption"><a href="{{ site.baseurl }}{{ image.bluesky }}">{{ image.caption }}</a></div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>
+      <div class="image-description">({{ image.date }}) </div>
+      <!--
       <div class="image-description"> <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a> ({{ image.date }}) </div>
+      -->
     </div>
   {% endfor %}
 </div>
