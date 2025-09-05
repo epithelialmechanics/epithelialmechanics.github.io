@@ -3,16 +3,15 @@ layout: default
 title:  Delegates
 description: Thread contributing members of the Epithelial Mechanics Fan club
 permalink: /delegates/
-images:
+images1:
   - {path: /assets/people/NimeshC.png, caption: "Founder & Convenor ", description: "Nimesh Chahare \n Columbia University \n New York, USA"}
   - {path: /assets/people/JuliaE.png, caption: "Co-organizer",  description: "Julia Eckert \n University of Queensland \n Brisbane, Australia"}
-    
-  - {path: /assets/people/EpiMech2.png, caption: "Deligate",  description: "Julia Eckert \n University of Queensland \n Brisbane, Australia"}
+images2:    
+  - {path: /assets/people/EpiMech2.png, description: "Julia Eckert \n University of Queensland \n Brisbane, Australia"}
 ---
 
-{% if image.caption == "Delegate" %}
-<div class="gallery">
-  {% for image in page.images %}
+<div class="gallery1">
+  {% for image in page.images1 %}
     <div class="gallery-item">
       <a href="{{ site.baseurl }}{{ image.path }}">
         <img src="{{ site.baseurl }}{{ image.path }}"/>
@@ -22,23 +21,21 @@ images:
     </div>
   {% endfor %}
 </div>
-{% else%}
-<div class="gallery1">
-  {% for image in page.images %}
+
+<div class="gallery2">
+  {% for image in page.images2 %}
     <div class="gallery-item">
       <a href="{{ site.baseurl }}{{ image.path }}">
         <img src="{{ site.baseurl }}{{ image.path }}"/>
       </a>
-      <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>
     </div>
-  {% endif %}
+  {% endfor %}
 </div>
-{% endelse%}
 
 
 <style>
-  .gallery {
+  .gallery1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -46,7 +43,7 @@ images:
     margin: 0 auto;
   }
 
-  .gallery1 {
+  .gallery2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
