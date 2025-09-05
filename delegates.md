@@ -18,7 +18,7 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Emma Lang", affiliation: "...", origin: "Oslo, Norway"}
+  - {path: /assets/people/EpiMechFC.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/EpiMechFC.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Barcelona, Spain"}
