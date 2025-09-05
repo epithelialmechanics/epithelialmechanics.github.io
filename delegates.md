@@ -75,7 +75,7 @@ images2:
   <br>
 </div>
 
-<a href="{{ site.baseurl }} /assets/people/delegates.png"><img src="{{ site.baseurl }} /assets/people/delegates.png"/></a>
+<a href="{{ site.baseurl }} /assets/people/Delegates.png"><img src="{{ site.baseurl }} /assets/people/delegates.png"/></a>
 
 
 
