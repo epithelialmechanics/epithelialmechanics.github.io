@@ -21,7 +21,7 @@ images2:
     </div>
   {% endfor %}
 </div>
-
+<br>
 <div class="gallery2">
   {% for image in page.images2 %}
     <div class="gallery-item">
@@ -33,6 +33,7 @@ images2:
       <div class="image-description">{{ image.description | newline_to_br }}</div>
     </div>
   {% endfor %}
+  <br>
 </div>
 
 
