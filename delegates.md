@@ -77,7 +77,7 @@ images2:
 
 <br>
 <div style="text-align: center;">
-    <img src="assets/people/DelegatesMap.png" width="500">
+    <img src="assets/people/DelegatesMap.png" width="500"> 
 </div>
 
 
