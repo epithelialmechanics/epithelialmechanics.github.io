@@ -6,8 +6,17 @@ permalink: /delegates/
 images1:
   - {path: /assets/people/NimeshC.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Columbia University \n New York, USA"}
   - {path: /assets/people/JuliaE.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
-images2:    
+images2: 
+  - {path: /assets/people/EpiMechFC.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
+  - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Stanford, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
+  - {path: /assets/people/EpiMechFC.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
 ---
 
 <div class="gallery1">
