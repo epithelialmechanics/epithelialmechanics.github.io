@@ -10,7 +10,7 @@ images:
   - {path: /assets/people/EpiMech2.png, caption: "Deligate",  description: "Julia Eckert \n University of Queensland \n Brisbane, Australia"}
 ---
 
-if ({{image.caption}} == "Deligate") {
+{% if image.caption == "Delegate"}
 <div class="gallery">
   {% for image in page.images %}
     <div class="gallery-item">
@@ -22,20 +22,7 @@ if ({{image.caption}} == "Deligate") {
     </div>
   {% endfor %}
 </div>
-}
-if ({{image.caption}} == "Deligate") {
-<div class="gallery1">
-  {% for image in page.images %}
-    <div class="gallery-item">
-      <a href="{{ site.baseurl }}{{ image.path }}">
-        <img src="{{ site.baseurl }}{{ image.path }}"/>
-      </a>
-      <div class="image-caption">{{ image.caption }}</div>
-      <div class="image-description">{{ image.description | newline_to_br }}</div>
-    </div>
-  {% endfor %}
-</div>
-}
+
 
 
 <style>
