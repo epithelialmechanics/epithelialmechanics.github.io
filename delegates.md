@@ -56,6 +56,7 @@ images2:
     </div>
   {% endfor %}
 </div>
+
 <br>
 <div class="gallery2">
   {% for image in page.images2 %}
@@ -77,8 +78,11 @@ images2:
 
 <br>
 <div style="text-align: center;">
-    <img src="assets/people/DelegatesMap.png" width="500"> 
+  <a href="{{ site.baseurl }}/assets/people/DelegatesMap.png">  
+            <img src="{{ site.baseurl }} /assets/people/DelegatesMap.png"/>
+  </a>
 </div>
+
 
 
 
