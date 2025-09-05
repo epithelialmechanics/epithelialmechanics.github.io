@@ -21,7 +21,7 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/EpiMechFC.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
   - {path: /assets/people/EpiMechFC.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/EpiMechFC.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
@@ -78,8 +78,8 @@ images2:
 
 <br>
 <div style="text-align: center;">
-  <a href="{{ site.baseurl }}/assets/people/DelegatesMap.png">  
-            <img src="{{ site.baseurl }} /assets/people/DelegatesMap.png"/>
+  <a href="{{ site.baseurl }}/assets/people/Blank_world_map_Equal_Earth_projection.svg">  
+            <img src="{{ site.baseurl }} /assets/people/Blank_world_map_Equal_Earth_projection.svg"/>
   </a>
 </div>
 
