@@ -75,8 +75,10 @@ images2:
   <br>
 </div>
 
-<a href="{{ site.baseurl }} /assets/people/Delegates.png"><img src="{{ site.baseurl }} /assets/people/delegates.png"/></a>
 
+<div style="text-align: center;">
+    <img src="assets/people/Delegates.png" alt="Delegates" width="500">
+</div>
 
 
 
