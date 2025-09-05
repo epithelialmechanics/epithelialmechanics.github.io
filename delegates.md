@@ -77,7 +77,7 @@ images2:
 
 
 <div style="text-align: center;">
-    <img src="assets/people/Delegates.png" alt="Delegates" width="500">
+    <img src="assets/people/Delegates.png" alt="Epithelial Mechanics Fan Club" width="500">
 </div>
 
 
