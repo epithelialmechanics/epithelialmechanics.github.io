@@ -8,14 +8,39 @@ images1:
   - {path: /assets/people/JuliaE.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
 images2: 
   - {path: /assets/people/EpiMechFC.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
-  - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Stanford, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
+  - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/EpiMechFC.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/EpiMechFC.png, name: "Augusto Borges", affiliation: "...", origin: "Munich, Germany"}
+  - {path: /assets/people/EpiMechFC.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Vienna, Austria"}
+  - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
+  - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/EpiMechFC.png, name: "Emma Lang", affiliation: "...", origin: "Oslo, Norway"}
+  - {path: /assets/people/EpiMechFC.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
+  - {path: /assets/people/EpiMechFC.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
+  - {path: /assets/people/EpiMechFC.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/EpiMechFC.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/EpiMechFC.png, name: "Maik Bischoff", affiliation: "...", origin: "Chapel Hill, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Neha Ghosh", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Sayuki Hirano", affiliation: "...", origin: "Kyoto, Japan"}
   - {path: /assets/people/EpiMechFC.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
+  - {path: /assets/people/EpiMechFC.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
+  - {path: /assets/people/EpiMechFC.png, name: "Weiyi Qian", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
 ---
 
