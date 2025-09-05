@@ -75,9 +75,9 @@ images2:
   <br>
 </div>
 
-
+<br>
 <div style="text-align: center;">
-    <img src="assets/people/Delegates.png" alt="Epithelial Mechanics Fan Club" width="500">
+    <img src="assets/people/Delegates.png" width="500">
 </div>
 
 
