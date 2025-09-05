@@ -40,6 +40,7 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
   - {path: /assets/people/EpiMechFC.png, name: "Weiyi Qian", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Yamini Ravichandran", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
 ---
 
