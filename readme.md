@@ -1,5 +1,7 @@
 # Welcome!
 
+epithelialmechanics.github.io
+
 ## info to update in future
 
 - always update the date!!!
@@ -10,9 +12,7 @@
 - delegate images go to `assets\people`
 - normal images go to `assets\img`
 - pdf go to `assets\pdf`
-- recipes go to `_recipes`
 - blogs go to `_posts`
-- projects go to `_projects`
 - news go to `_news`
 
 - whenever update the webpage, add the date in the `_layouts/default.html`
