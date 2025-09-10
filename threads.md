@@ -3,7 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
-  - {path: /assets/threads/20250831.png, caption: "About differential adhesion ", description: "by Benjamin J Swedlund", date: "31/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lxozze5pv22i}
+  - {path: /assets/threads/20250831.png, caption: "About differential adhesion ", description: "by Benjamin Swedlund", date: "31/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lxozze5pv22i}
   - {path: /assets/threads/20250810.png, caption: "About cyclic loading ", description: "by Lucia Baldauf & Eleni Papafilippou", date: "10/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvzpfvnu3k2e} 
   - {path: /assets/threads/20250720.png, caption: "About in vivo measurements ", description: "by Arthur Michaut", date: "20/07/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3luevq5azf62i}
   - {path: /assets/threads/20250629.png, caption: "About epithelial morphogenesis ", description: "by Neha Ghosh", date: "29/06/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lsq2ypalhs2p}
@@ -17,7 +17,14 @@ images:
   - {path: /assets/threads/20241215.png, caption: "About mechano-metabolism ", description: "by Eirini Maniou & Makis Ampartzidis", date: "15/12/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ldbihhb3ns2z}
   - {path: /assets/threads/20241201.png, caption: "About collective cell migration ", description: "by Leone Rossetti", date: "01/12/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lcaajuncns2u}
   - {path: /assets/threads/20241117.png, caption: "About traction force microscopy  ", description: "by Nimesh Chahare & Julia Eckert", date: "17/11/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lb4x74fl222a}
-   
+
+ - {path: /assets/threads/20241006.png, caption: "About directional collective migration ", description: "by Sayuki Hirano", date: "06/10/2024", bluesky: https://twitter.com/EpiMechFC/status/1842822176497455526}
+ - {path: /assets/threads/20240922.png, caption: "About pulsatile actomyosin ", description: "by Weiyi Qian", date: "22/09/2024", bluesky: https://twitter.com/EpiMechFC/status/1837777674795962773}
+ - {path: /assets/threads/20240908.png, caption: "About FGF signaling ", description: "by Nimesh Chahare", date: "08/09/2024", bluesky: https://twitter.com/EpiMechFC/status/1832675244500189425}
+ - {path: /assets/threads/20240825.png, caption: "About positional information ", description: "by David Brückner", date: "25/08/2024", bluesky: https://twitter.com/EpiMechFC/status/1827601818341249213}
+ - {path: /assets/threads/20240811.png, caption: "About stress inference ", description: "by Augusto Borges", date: "11/08/2024", bluesky: https://twitter.com/EpiMechFC/status/1822528416739950691}
+ - {path: /assets/threads/20240714.png, caption: "About symmetry-breaking in embryonic development ", description: "by Rajendra Singh Negi", date: "14/07/2024", bluesky: https://x.com/EpiMechFC/status/1812396654697353496}
+ - {path: /assets/threads/20240630.png, caption: "About mechanics and geometry ", description: "by Julia Eckert", date: "30/06/2024", bluesky: https://x.com/EpiMechFC/status/1807308162627768786}
   - {path: /assets/threads/20240616.png, caption: "About rotating tissues  ", description: "by Nimesh Chahare", date: "16/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lx2fkp2krn22}
   - {path: /assets/threads/20240602.png, caption: "About topological defect-mediated morphogenesis ", description: "by Yamini Ravichandran", date: "02/06/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3ltszpeucir2b}
   - {path: /assets/threads/20240519.png, caption: "About micropatterning ", description: "by Vina Putra", date: "19/05/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvffg7wcgs25}
