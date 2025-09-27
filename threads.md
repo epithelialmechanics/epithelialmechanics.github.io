@@ -3,6 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images:
+  - {path: /assets/threads/20250921.png, caption: "About controlling stretch/compression in epithelial system ", description: "by Valeria Venturini", date: "21/09/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lzdwpvrvus2w}
   - {path: /assets/threads/20250831.png, caption: "About differential adhesion ", description: "by Benjamin Swedlund", date: "31/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lxozze5pv22i}
   - {path: /assets/threads/20250810.png, caption: "About cyclic loading ", description: "by Lucia Baldauf & Eleni Papafilippou", date: "10/08/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lvzpfvnu3k2e} 
   - {path: /assets/threads/20250720.png, caption: "About in vivo measurements ", description: "by Arthur Michaut", date: "20/07/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3luevq5azf62i}
