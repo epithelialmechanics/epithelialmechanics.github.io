@@ -34,6 +34,7 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Neha Ghosh", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Panos Oikonomou", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Sayuki Hirano", affiliation: "...", origin: "Kyoto, Japan"}
   - {path: /assets/people/EpiMechFC.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
