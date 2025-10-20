@@ -14,8 +14,8 @@ images2:
   - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Benjamin_Swedlund.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
   - {path: /assets/people/Clement_Hallopeau.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
-  - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
+  - {path: /assets/people/David_Brueckner.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
+  - {path: /assets/people/Dhiraj_Indana.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Emma_Lang.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
