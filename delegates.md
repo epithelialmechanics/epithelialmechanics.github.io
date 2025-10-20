@@ -12,8 +12,8 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Arthur_Michaut.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
-  - {path: /assets/people/EpiMechFC.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/Benjamin_Swedlund.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
+  - {path: /assets/people/Clement_Hallopeau.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
@@ -21,7 +21,7 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/EpiMechFC.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
+  - {path: /assets/people/Ibrahim_Erbhay.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
   - {path: /assets/people/EpiMechFC.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/EpiMechFC.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
