@@ -4,14 +4,14 @@ title:  Delegates
 description: Thread contributing members of the Epithelial Mechanics Fan club
 permalink: /delegates/
 images1:
-  - {path: /assets/people/NimeshC.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Columbia University \n New York, USA"}
-  - {path: /assets/people/JuliaE.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
+  - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Columbia University \n New York, USA"}
+  - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
 images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/EpiMechFC.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
-  - {path: /assets/people/EpiMechFC.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
-  - {path: /assets/people/EpiMechFC.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
+  - {path: /assets/people/Arthur_Michaut.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
