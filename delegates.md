@@ -79,7 +79,7 @@ images2:
 
 <br>
 <div style="text-align: center;">
-  <a href="{{ site.baseurl }}/assets/people/Blank_world_map_Equal_Earth_projection.svg">  
+  <a href="{{ site.baseurl }}/assets/people/000_Blank_world_map_Equal_Earth_projection.svg">  
             <img src="{{ site.baseurl }} /assets/people/Blank_world_map_Equal_Earth_projection.svg"/>
   </a>
 </div>
