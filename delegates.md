@@ -7,14 +7,14 @@ images1:
   - {path: /assets/people/NimeshC.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Columbia University \n New York, USA"}
   - {path: /assets/people/JuliaE.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
 images2: 
-  - {path: /assets/people/EpiMechFC.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
+  - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/EpiMechFC.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/EpiMechFC.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
-  - {path: /assets/people/EpiMechFC.png, name: "Augusto Borges", affiliation: "...", origin: "Munich, Germany"}
+  - {path: /assets/people/EpiMechFC.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Vienna, Austria"}
+  - {path: /assets/people/EpiMechFC.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
   - {path: /assets/people/EpiMechFC.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
