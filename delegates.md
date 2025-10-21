@@ -8,7 +8,7 @@ images1:
   - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
 images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
-  - {path: /assets/people/EpiMechFC.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
+  - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Arthur_Michaut.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
