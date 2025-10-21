@@ -62,11 +62,11 @@ images2:
 <div class="gallery2">
   {% for image in page.images2 %}
     <div class="gallery-item">
-<!--      
+    
       <a href="{{ site.baseurl }}{{ image.path }}">
         <img src="{{ site.baseurl }}{{ image.path }}"/>
       </a>
--->      
+     
       <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
  <!--      
       <div class="image-description">{{ image.affiliation | newline_to_br }}</div>
