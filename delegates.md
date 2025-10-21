@@ -4,8 +4,8 @@ title:  Delegates
 description: Thread contributing members of the Epithelial Mechanics Fan club
 permalink: /delegates/
 images1:
-  - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Columbia University \n New York, USA"}
-  - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "University of Queensland \n Brisbane, Australia"}
+  - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "New York, USA"}
+  - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "Brisbane, Australia"}
 images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
@@ -52,10 +52,8 @@ images2:
         <img src="{{ site.baseurl }}{{ image.path }}"/>
       </a>
       <div class="image-caption">{{ image.caption }}</div>
-      <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
-<!--      
+      <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>   
       <div class="image-description">{{ image.description | newline_to_br }}</div>
--->
     </div>
   {% endfor %}
 </div>
