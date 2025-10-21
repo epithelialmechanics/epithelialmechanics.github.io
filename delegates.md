@@ -53,7 +53,9 @@ images2:
       </a>
       <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
+<!--      
       <div class="image-description">{{ image.description | newline_to_br }}</div>
+-->
     </div>
   {% endfor %}
 </div>
