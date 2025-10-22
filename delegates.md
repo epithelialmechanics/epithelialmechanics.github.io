@@ -9,6 +9,7 @@ images1:
 images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
+  - {path: /assets/people/Alex_Plum.png, name: "Alex Plum", affiliation: "...", origin: "San Diego, USA"}
   - {path: /assets/people/Arthur_Michaut.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Benjamin_Swedlund.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
