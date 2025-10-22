@@ -14,7 +14,7 @@ seo_description: We're your source for papers on various Epithelial Mechanics to
 </div>
 
 
-Hello! 
+Hello!
 
 Welcome to our Epithelial Mechanics Fan Club website! 
 
