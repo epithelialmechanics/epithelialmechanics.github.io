@@ -9,7 +9,6 @@ images1:
 images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
-  - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Arthur_Michaut.png, name: "Arthur Michaut", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Augusto_Borges.png, name: "Augusto Borges", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Benjamin_Swedlund.png, name: "Benjamin Swedlund", affiliation: "...", origin: "Los Angeles, USA"}
@@ -17,32 +16,34 @@ images2:
   - {path: /assets/people/David_Brueckner.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
   - {path: /assets/people/Dhiraj_Indana.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
   - {path: /assets/people/Eirini_Maniou.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
-  - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Emma_Lang.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/Feyza_Nur_Arslan.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
-  - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Ibrahim_Erbhay.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/Kate_Cavanaugh.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
-  - {path: /assets/people/EpiMechFC.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Chapel Hill, USA"}
-  - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Mathieu_Dedenon.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Miquel_Bosch.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Neha_Ghosh.png, name: "Neha Ghosh", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Panos_Oikonomo.png, name: "Panos Oikonomou", affiliation: "...", origin: "New York, USA"}
-  - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
   - {path: /assets/people/Sayuki_Hirano.png, name: "Sayuki Hirano", affiliation: "...", origin: "Kyoto, Japan"}
   - {path: /assets/people/Tom_Golde.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Valeria_Venturini.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/EpiMechFC.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
   - {path: /assets/people/Weiyi_Qian.png, name: "Weiyi Qian", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Yamini_Ravichandran.png, name: "Yamini Ravichandran", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Zoya_Mann.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
+images3: 
+  - {path: /assets/people/EpiMechFC.png, name: "Andreas Schönit", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
+  - {path: /assets/people/EpiMechFC.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
+  - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
+  - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
+  - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
+  - {path: /assets/people/EpiMechFC.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
 ---
 
 <div class="gallery1">
@@ -62,15 +63,24 @@ images2:
 <div class="gallery2">
   {% for image in page.images2 %}
     <div class="gallery-item">
-<!--    
       <a href="{{ site.baseurl }}{{ image.path }}">
         <img src="{{ site.baseurl }}{{ image.path }}"/>
       </a>
- -->     
       <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
  <!--      
       <div class="image-description">{{ image.affiliation | newline_to_br }}</div>
  -->      
+      <div class="image-description">{{ image.origin | newline_to_br }}</div>
+    </div>
+  {% endfor %}
+  <br>
+</div>
+
+<br>
+<div class="gallery2">
+  {% for image in page.images3 %}
+    <div class="gallery-item">
+      <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
       <div class="image-description">{{ image.origin | newline_to_br }}</div>
     </div>
   {% endfor %}
