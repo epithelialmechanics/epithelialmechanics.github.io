@@ -28,8 +28,8 @@ images2:
   - {path: /assets/people/EpiMechFC.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
-  - {path: /assets/people/EpiMechFC.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Maik Bischoff", affiliation: "...", origin: "Chapel Hill, USA"}
+  - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Chapel Hill, USA"}
   - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Mathieu_Dedenon.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Miquel_Bosch.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
