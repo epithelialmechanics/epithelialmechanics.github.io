@@ -15,12 +15,14 @@ images2:
   - {path: /assets/people/Clement_Hallopeau.png, name: "Clément Hallopeau", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/David_Brueckner.png, name: "David Brückner", affiliation: "...", origin: "Basel, Switzerland"}
   - {path: /assets/people/Dhiraj_Indana.png, name: "Dhiraj Indana", affiliation: "...", origin: "Pasadena, USA"}
-  - {path: /assets/people/Eirini_Maniou.png, name: "Eirini Maniou", affiliation: "...", origin: "Padova, Italy"}
+  - {path: /assets/people/Eirini_Maniou.png, name: "Eirini Maniou", affiliation: "...", origin: "Dublin, Ireland"}
   - {path: /assets/people/Emma_Lang.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/Feyza_Nur_Arslan.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/Ibrahim_Erbhay.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
+  - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Kate_Cavanaugh.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
+  - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Münster, Germany"}
@@ -39,7 +41,6 @@ images3:
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
-  - {path: /assets/people/EpiMechFC.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
