@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Delegates
-description: Thread contributing members of the Epithelial Mechanics Fan club
+description: Thread contributing members of the Epithelial Mechanics Fan Club
 permalink: /delegates/
 images1:
   - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "New York, USA"}
