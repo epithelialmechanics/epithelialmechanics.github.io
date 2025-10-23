@@ -20,6 +20,7 @@ images2:
   - {path: /assets/people/Eirini_Maniou.png, name: "Eirini Maniou", affiliation: "...", origin: "Dublin, Ireland"}
   - {path: /assets/people/Emma_Lang.png, name: "Emma Lång", affiliation: "...", origin: "Oslo, Norway"}
   - {path: /assets/people/Feyza_Nur_Arslan.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
+  - {path: /assets/people/Guillermo_Martinez.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Ibrahim_Erbhay.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
@@ -40,7 +41,6 @@ images2:
   - {path: /assets/people/Zoya_Mann.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
 images3: 
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/EpiMechFC.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/EpiMechFC.png, name: "Makis Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
