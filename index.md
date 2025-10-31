@@ -10,7 +10,7 @@ seo_description: We're your source for papers on various Epithelial Mechanics to
 ---
 
 <div style="text-align: center;">
-    <img src="assets/img/toomuchmechanics.png" alt="Epithelial Mechanics Fan Club" width="600">
+    <img src="assets/img/newepimechfc2.png" alt="Epithelial Mechanics Fan Club" width="600">
 </div>
 
 
