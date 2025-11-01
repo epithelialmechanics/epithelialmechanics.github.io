@@ -19,4 +19,4 @@ permalink: /contact/
 </style>
 <div class="responsive-iframe">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPB_3l2VmtE93reo5fRc2XOfegIfxJdRtWV6XVPl5Tl6JlmQ/viewform?embedded=true" width="550" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+</div> 
