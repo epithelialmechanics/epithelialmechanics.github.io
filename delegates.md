@@ -6,7 +6,7 @@ permalink: /delegates/
 images1:
   - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "New York, USA"}
   - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "Brisbane, Australia"}
-images2:
+images2: 
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/Alex_Plum.png, name: "Alex Plum", affiliation: "...", origin: "San Diego, USA"}
