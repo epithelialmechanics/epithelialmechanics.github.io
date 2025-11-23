@@ -3,6 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
+  - {path: /assets/threads/20251123.png, caption: "About epithelial geometry and cancer", description: "by Jorge Almagro", date: "23/11/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m6bttj5esq2a} 
   - {path: /assets/threads/20251102.png, caption: "About characterizing and controlling avian gastrulation flows", description: "by Alex Plum", date: "02/11/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m4n5heg4rc25} 
   - {path: /assets/threads/20251012.png, caption: "About applying tension in vivo", description: "by Panos Oikonomou", date: "12/10/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m2yqhacoks25}
   - {path: /assets/threads/20250921.png, caption: "About controlling stretch/compression in epithelial system ", description: "by Valeria Venturini", date: "21/09/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lzdwpvrvus2w}
