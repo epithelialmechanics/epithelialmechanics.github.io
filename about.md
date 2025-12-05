@@ -10,7 +10,7 @@ The Epithelial Mechanics Fan Club is a vibrant, non-profit platform dedicated to
 
 Nimesh Chahare started the Twitter account on July 23, 2023, and shortly thereafter, Julia Eckert joined him in running the club together. Since then, our community of passionate scientists has been steadily growing and has become a platform for transparent knowledge exchange, collaboration, and career support. 
 
-Do not miss our [FocalPlane](https://focalplane.biologists.com/2025/12/04/epithelial-mechanics-fan-club/) blog post on how the Club started a little over 2 years ago and how it has developed since then. <br><br>
+Do not miss our [FocalPlane](https://focalplane.biologists.com/2025/12/04/epithelial-mechanics-fan-club/) blog post on how the club started a little over 2 years ago and how it has developed since then. <br><br>
 
 
 The Epithelial Mechanics Fan Club is currently managed by:
