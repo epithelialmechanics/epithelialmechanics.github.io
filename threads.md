@@ -26,8 +26,8 @@ images:
   - {path: /assets/threads/20241020.png, caption: "About polar orientation during long-range collective migration ", description: "by Emma Lång", date: "20/10/2024", bluesky: https://x.com/EpiMechFC/status/1847895581626126795}
   - {path: /assets/threads/20241006.png, caption: "About directional collective migration ", description: "by Sayuki Hirano", date: "06/10/2024", bluesky: https://x.com/EpiMechFC/status/1842822176497455526}
   - {path: /assets/threads/20240922.png, caption: "About pulsatile actomyosin ", description: "by Weiyi Qian", date: "22/09/2024", bluesky: https://x.com/EpiMechFC/status/1837777674795962773}
-  - {path: /assets/threads/20240908.png, caption: "About FGF signaling ", description: "by Nimesh Chahare", date: "08/09/2024", bluesky: https://x.com/EpiMechFC/status/1832675244500189425}
     
+  - {path: /assets/threads/20240908.png, caption: "About FGF signaling ", description: "by Nimesh Chahare", date: "08/09/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m7cqfribkk2t}
   - {path: /assets/threads/20240825.png, caption: "About positional information ", description: "by David Brückner", date: "25/08/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m5nq3lsa6f2a}    
   - {path: /assets/threads/20240811.png, caption: "About stress inference ", description: "by Augusto Borges", date: "11/08/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m3yt2vxsmc2l}
   - {path: /assets/threads/20240714.png, caption: "About symmetry-breaking in embryonic development ", description: "by Rajendra Singh Negi", date: "14/07/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m2dz5pxkib2o}
