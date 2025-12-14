@@ -30,6 +30,7 @@ images2:
   - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/Lucien_Hinderling.png, name: "Lucien Hinderling", affiliation: "...", origin: "Bern, Switzerland"}
   - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Münster, Germany"}
   - {path: /assets/people/Mathieu_Dedenon.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Miquel_Bosch.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
