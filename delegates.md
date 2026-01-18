@@ -28,6 +28,7 @@ images2:
   - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Kate_Cavanaugh.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
   - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
+  - {path: /assets/people/Laura_Rustarazo.png, name: "Laura  Rustarazo-Calvo", affiliation: "...", origin: "Heidelberg, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucien_Hinderling.png, name: "Lucien Hinderling", affiliation: "...", origin: "Bern, Switzerland"}

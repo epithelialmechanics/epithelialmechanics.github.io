@@ -3,6 +3,8 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
+
+  - {path: /assets/threads/20260118.png, caption: "About tricellular junctions", description: "Laura Rustarazo-Calvo", date: "18/01/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mcpcg3perc2f}
   - {path: /assets/threads/20251214.png, caption: "About microfabrication", description: "by Lucien Hinderling", date: "14/12/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m7wo2br23c2e}
   - {path: /assets/threads/20251123.png, caption: "About epithelial geometry and cancer", description: "by Jorge Almagro", date: "23/11/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m6bttj5esq2a} 
   - {path: /assets/threads/20251102.png, caption: "About characterizing and controlling avian gastrulation flows", description: "by Alex Plum", date: "02/11/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m4n5heg4rc25} 
