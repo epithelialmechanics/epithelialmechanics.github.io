@@ -30,6 +30,7 @@ images2:
   - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Laura_Rustarazo-Calvo.png, name: "Laura  Rustarazo-Calvo", affiliation: "...", origin: "Heidelberg, Germany"}
   - {path: /assets/people/Leone_Rossetti.png, name: "Leone Rossetti", affiliation: "...", origin: "London, UK"}
+  - {path: /assets/people/Lucas_Anger.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucien_Hinderling.png, name: "Lucien Hinderling", affiliation: "...", origin: "Bern, Switzerland"}
   - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Münster, Germany"}
@@ -46,7 +47,6 @@ images2:
   - {path: /assets/people/Zoya_Mann.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
 images3: 
   - {path: /assets/people/EpiMechFC.png, name: "Eleni Papafilippou", affiliation: "...", origin: "London, UK"}
-  - {path: /assets/people/EpiMechFC.png, name: "Lucas Anger", affiliation: "...", origin: "Paris, France"}
   - {path: /assets/people/EpiMechFC.png, name: "Rajendra Singh Negi", affiliation: "...", origin: "Syracuse, USA"}
 ---
 
