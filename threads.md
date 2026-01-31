@@ -27,8 +27,8 @@ images:
     
   - {path: /assets/threads/20241103.png, caption: "About tissue fracture ", description: "by Nimesh Chahare", date: "03/11/2024", bluesky: https://x.com/EpiMechFC/status/1852995919370678298}    
   - {path: /assets/threads/20241020.png, caption: "About polar orientation during long-range collective migration ", description: "by Emma Lång", date: "20/10/2024", bluesky: https://x.com/EpiMechFC/status/1847895581626126795}
-  - {path: /assets/threads/20241006.png, caption: "About directional collective migration ", description: "by Sayuki Hirano", date: "06/10/2024", bluesky: https://x.com/EpiMechFC/status/1842822176497455526}
-
+    
+  - {path: /assets/threads/20241006.png, caption: "About directional collective migration ", description: "by Sayuki Hirano", date: "06/10/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mdpgz2ga3k2p}
   - {path: /assets/threads/20240922.png, caption: "About pulsatile actomyosin ", description: "by Weiyi Qian", date: "22/09/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mc3sh47eac2v}  
   - {path: /assets/threads/20240908.png, caption: "About FGF signaling ", description: "by Nimesh Chahare", date: "08/09/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m7cqfribkk2t}
   - {path: /assets/threads/20240825.png, caption: "About positional information ", description: "by David Brückner", date: "25/08/2024", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m5nq3lsa6f2a}    
