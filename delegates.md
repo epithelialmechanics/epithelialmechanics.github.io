@@ -26,6 +26,7 @@ images2:
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Jianxiong_Wang.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/Juan_Manuel_Garcia_Arcos.png, name: "Juan Manuel García Arcos", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/Kate_Cavanaugh.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
   - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
   - {path: /assets/people/Laura_Rustarazo-Calvo.png, name: "Laura  Rustarazo-Calvo", affiliation: "...", origin: "Heidelberg, Germany"}
