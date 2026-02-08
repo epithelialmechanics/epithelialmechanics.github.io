@@ -3,7 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
-
+  - {path: /assets/threads/20260208.png, caption: "About Flipper-TR ", description: "by Juan Manuel García Arcos", date: "08/02/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3medhn327qc22}
   - {path: /assets/threads/20260118.png, caption: "About tricellular junctions", description: "by Laura Rustarazo-Calvo", date: "18/01/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mcpcg3perc2f}
   - {path: /assets/threads/20251214.png, caption: "About microfabrication", description: "by Lucien Hinderling", date: "14/12/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m7wo2br23c2e}
   - {path: /assets/threads/20251123.png, caption: "About epithelial geometry and cancer", description: "by Jorge Almagro", date: "23/11/2025", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3m6bttj5esq2a} 
