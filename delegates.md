@@ -6,7 +6,7 @@ permalink: /delegates/
 images1:
   - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "New York, USA"}
   - {path: /assets/people/Julia_Eckert.png, caption: "Co-organizer", name: "Julia Eckert",  description: "Brisbane, Australia"}
-images2: 
+images2:
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
   - {path: /assets/people/Akshar_Rao.png, name: "Akshar Rao", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/Alex_Plum.png, name: "Alex Plum", affiliation: "...", origin: "San Diego, USA"}
@@ -26,6 +26,7 @@ images2:
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Jianxiong_Wang.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/Jorge_Barrasa_Fano.png, name: "Jorge Barrasa Fano", affiliation: "...", origin: "Leuven, Belgium"}
   - {path: /assets/people/Juan_Manuel_Garcia_Arcos.png, name: "Juan Manuel García Arcos", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/Kate_Cavanaugh.png, name: "Kate Cavanaugh", affiliation: "...", origin: "San Francisco, USA"}
   - {path: /assets/people/Lara_Hundsdorfer.png, name: "Lara Hundsdorfer", affiliation: "...", origin: "Tübingen, Germany"}
