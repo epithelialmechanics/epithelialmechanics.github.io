@@ -3,6 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
+  - {path: /assets/threads/20260322.png, caption: "About epithelial mechanics in a sea anemone ", description: "by Inés Fournon Berodia ", date: "22/03/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mhn36tsmjs2u}
   - {path: /assets/threads/20260301.png, caption: "About 3D TFM ", description: "by Jorge Barrasa Fano ", date: "01/03/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mfybel4g5s2r}
   - {path: /assets/threads/20260208.png, caption: "About Flipper-TR ", description: "by Juan Manuel García Arcos", date: "08/02/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3medhn327qc22}
   - {path: /assets/threads/20260118.png, caption: "About tricellular junctions", description: "by Laura Rustarazo-Calvo", date: "18/01/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mcpcg3perc2f}
