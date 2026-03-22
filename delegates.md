@@ -22,6 +22,7 @@ images2:
   - {path: /assets/people/Feyza_Nur_Arslan.png, name: "Feyza Nur Arslan", affiliation: "...", origin: "Lausanne, Switzerland"}
   - {path: /assets/people/Guillermo_Martinez.png, name: "Guillermo Martínez Ara", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Ibrahim_Erbhay.png, name: "Ibrahim Erbhay", affiliation: "...", origin: "Galway, Ireland"}
+  - {path: /assets/people/Ines_Fournon_Berodia.png, name: "Inés Fournon Berodia", affiliation: "...", origin: "Bergen, Norway"}
   - {path: /assets/people/Ioakeim_Ampartzidis.png, name: "Ioakeim (Makis) Ampartzidis", affiliation: "...", origin: "Cambridge, UK"}
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Jianxiong_Wang.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
