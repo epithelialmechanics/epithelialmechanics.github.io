@@ -42,6 +42,7 @@ images2:
   - {path: /assets/people/Miquel_Bosch.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Neha_Ghosh.png, name: "Neha Ghosh", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Panos_Oikonomo.png, name: "Panos Oikonomou", affiliation: "...", origin: "New York, USA"}
+  - {path: /assets/people/Ronja_Houtekamer.png, name: "Ronja Houtekamer", affiliation: "...", origin: "Münster, Germany"}
   - {path: /assets/people/Sayuki_Hirano.png, name: "Sayuki Hirano", affiliation: "...", origin: "Kyoto, Japan"}
   - {path: /assets/people/Tom_Golde.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Valeria_Venturini.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
