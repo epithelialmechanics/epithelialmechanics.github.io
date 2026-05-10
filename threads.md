@@ -56,6 +56,9 @@ images:
   - {path: /assets/threads/20231029.png, caption: "About optogenetics", description: "by Guillermo Martínez Ara", date: "29/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lh3x5xxs322s}
   - {path: /assets/threads/20231015.png, caption: "About mechanics of hPSCs ", description: "by Miquel Bosch", date: "15/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lfjqw42hot2e}
   - {path: /assets/threads/20231001.png, caption: "About adherens junctions ", description: "by Isabela Fortunato", date: "01/10/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lfyyxwqru22l}
+
+  - {path: /assets/threads/20230924.png, caption: "About flow induced shear stress ", description: "by Ibrahim Erbay", date: "24/09/2023", bluesky: https://x.com/EpiMechFC/status/1705899464643199394}
+
   - {path: /assets/threads/20230910.png, caption: "About inplane mechanical forces on epithelial tissues ", description: "by Mathieu Dedenon", date: "10/09/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lhniocktj22n}
   - {path: /assets/threads/20230814.png, caption: "About effect of curvature on epithelial tissue ", description: "by Nimesh Chahare", date: "13/08/2023", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3lkhr4ctox22m}
 ---
