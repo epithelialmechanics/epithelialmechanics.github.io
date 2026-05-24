@@ -3,7 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
-  - {path: /assets/threads/202605024.png, caption: "About differentiated keratinocytes in wound-healing ", description: "by Johan Ajnabi", date: "24/05/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mmlfary5722s}
+  - {path: /assets/threads/20260524.png, caption: "About differentiated keratinocytes in wound-healing ", description: "by Johan Ajnabi", date: "24/05/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mmlfary5722s}
   - {path: /assets/threads/202605003.png, caption: "About mechanical and biochemical signals ", description: "by Ronja Houtekamer", date: "03/05/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mkwnhxcbgc2a}
   - {path: /assets/threads/20260412.png, caption: "About symmetry-breaking in orbiting tissues ", description: "by Jiwon Kim", date: "12/04/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mjbro2ybg22e}
   - {path: /assets/threads/20260322.png, caption: "About epithelial mechanics in a sea anemone ", description: "by Inés Fournon Berodia", date: "22/03/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mhn36tsmjs2u}
