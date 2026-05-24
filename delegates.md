@@ -27,6 +27,7 @@ images2:
   - {path: /assets/people/Isabela_Fortunato.png, name: "Isabela Fortunato", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Jianxiong_Wang.png, name: "Jianxiong Wang", affiliation: "...", origin: "Brisbane, Australia"}
   - {path: /assets/people/Jiwon_Kim.png, name: "Jiwon Kim", affiliation: "...", origin: "Providence, USA"}
+  - {path: /assets/people/Johan_Ajnabi.png, name: "Johan Ajnabi", affiliation: "...", origin: "Bengaluru, India"}
   - {path: /assets/people/Jorge_Almagro.png, name: "Jorge Almagro", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Jorge_Barrasa_Fano.png, name: "Jorge Barrasa Fano", affiliation: "...", origin: "Leuven, Belgium"}
   - {path: /assets/people/Juan_Manuel_Garcia_Arcos.png, name: "Juan Manuel García Arcos", affiliation: "...", origin: "Lausanne, Switzerland"}
