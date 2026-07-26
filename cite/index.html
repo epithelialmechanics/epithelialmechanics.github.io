@@ -66,8 +66,8 @@ description: Paste paper links, get ready-to-post APA citations with the hashtag
       <option value="#EpithelialMechanicsReviews">#EpithelialMechanicsReviews</option>
     </select>
   </label>
-  <label><input type="checkbox" id="autotag" checked> Auto-detect reviews</label>
   <label>Limit <input type="number" id="limit" value="300" min="100" max="300" style="width:6rem"></label>
+  <span class="note">Set the hashtag per paper with the dropdown on each row.</span>
 </div>
 
 <div class="actions">
@@ -157,14 +157,6 @@ function authorList(authors, keep){
 }
 function stripTags(s){ return String(s||"").replace(/<[^>]*>/g,"").replace(/\s+/g," ").trim(); }
 
-function looksLikeReview(w){
-  const c = (w["container-title"]||[])[0] || "";
-  const t = stripTags((w.title||[])[0]);
-  if ((w.subtype||"").toLowerCase().includes("review")) return true;
-  return /(^|\s)(nature reviews|trends in|current opinion|annual review|reviews?)\b/i.test(c)
-      || /\bat a glance\b/i.test(t);
-}
-
 function buildCitation(w, keep){
   const authors = authorList(w.author || [], keep);
   const year    = ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "n.d.";
@@ -215,7 +207,7 @@ document.getElementById("go").addEventListener("click", async () => {
       }
       const w = await lookup(doi);
       const url = /^https?:\/\//i.test(src) ? src : "https://doi.org/" + doi;
-      rows.push({src, doi, url, work:w, review:looksLikeReview(w), tag:null});
+      rows.push({src, doi, url, work:w, tag:null});
     }catch(e){
       rows.push({src, doi, error:e.message});
     }
@@ -226,12 +218,7 @@ document.getElementById("go").addEventListener("click", async () => {
 });
 
 function tagFor(r){
-  if (r.tag) return r.tag;
-  const base = document.getElementById("tag").value;
-  if (document.getElementById("autotag").checked && r.review){
-    return base.startsWith("#EpithelialMechanicsReview") ? base : "#EpithelialMechanicsReview";
-  }
-  return base;
+  return r.tag || document.getElementById("tag").value;
 }
 
 function postFor(r){
@@ -297,13 +284,14 @@ function tableData(){
     if (r.error) return [i+1, r.src, r.doi||"", "not found","","","","","",""];
     const w = r.work, p = postFor(r);
     const isPre = w.type === "posted-content";
+    const tag = tagFor(r);
     return [
       i+1, r.url, r.doi,
-      isPre ? "Preprint" : (r.review ? "Review" : "Research article"),
+      isPre ? "Preprint" : (/Review/i.test(tag) ? "Review" : "Research article"),
       ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "",
       isPre ? (w["group-title"]||"bioRxiv") : ((w["container-title"]||[])[0]||""),
       stripTags((w.title||[])[0]),
-      tagFor(r), p.text, p.cost
+      tag, p.text, p.cost
     ];
   });
 }
@@ -335,7 +323,7 @@ document.getElementById("clr").addEventListener("click", () => {
   document.getElementById("msg").textContent = "";
   document.getElementById("tblsec").hidden = true;
 });
-["tag","autotag","limit"].forEach(id =>
+["tag","limit"].forEach(id =>
   document.getElementById(id).addEventListener("change", () => { rows.forEach(r=>r.tag=null); render(); }));
 
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c =>
