@@ -3,6 +3,7 @@ layout: default
 title: Threads
 permalink: /threads/
 images: 
+  - {path: /assets/threads/20260726.png, caption: "About epithelial cell extrusion ", description: "by Marija Matejčić", date: "26/07/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mrjtxr2ak22w}
   - {path: /assets/threads/20260705.png, caption: "About building spatial organization ", description: "by Raghavan Thiagarajan", date: "05/07/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mpuytgarxk2x}
   - {path: /assets/threads/20260614.png, caption: "About 3D tissue cartography ", description: "by Nimesh Chahare", date: "14/06/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3moa3c46b222x}
   - {path: /assets/threads/20260524.png, caption: "About differentiated keratinocytes in wound-healing ", description: "by Johan Ajnabi", date: "24/05/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mmlfary5722s}
