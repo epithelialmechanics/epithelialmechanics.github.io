@@ -63,9 +63,21 @@ description: Paste a submission, then copy one post at a time straight into the 
   <p class="note">Pasting into the composer makes Bluesky resolve the <code>@handles</code> and links itself, so mentions notify people properly.</p>
 </details>
 
-<textarea class="mono" id="src" rows="8" placeholder="EPIMECHFC THREAD SUBMISSION&#10;Contributor: …&#10;&#10;──────────&#10;POST 0  [Introduction]  text 253/275&#10;…"></textarea>
+<p>
+  <label for="file">Choose the submission file</label>
+  <input type="file" id="file" accept=".txt,text/plain">
+  <span class="note">Loads as soon as you pick it.</span>
+</p>
+
+<details>
+  <summary>…or paste the text instead</summary>
+  <textarea class="mono" id="src" rows="8" placeholder="EPIMECHFC THREAD SUBMISSION&#10;Contributor: …&#10;&#10;──────────&#10;POST 0  [Introduction]  text 253/275&#10;…"></textarea>
+  <div class="actions">
+    <button id="load">Load</button>
+  </div>
+</details>
+
 <div class="actions">
-  <button id="load">Load</button>
   <button class="sec" id="reset">Clear</button>
   <span class="note" id="msg"></span>
 </div>
@@ -212,17 +224,42 @@ function progress(){
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c =>
   ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
 
-document.getElementById("load").addEventListener("click", () => {
-  posts = parse(document.getElementById("src").value);
+function loadFrom(text, label){
+  posts = parse(text);
   const msg = document.getElementById("msg");
-  if (!posts.length){ msg.textContent = "Couldn't find any posts in that text."; return; }
+  if (!posts.length){
+    msg.textContent = "Couldn't find any posts in " + (label ? label : "that text") + ".";
+    render(); return;
+  }
   const over = posts.filter(p => counted(p) > 300).length;
-  msg.textContent = `Loaded ${posts.length} posts` + (over ? ` — ${over} over the limit` : "");
+  msg.textContent = (label ? label + ": " : "") + `loaded ${posts.length} posts`
+    + (over ? ` — ${over} over the limit` : "");
   render();
+}
+
+document.getElementById("file").addEventListener("change", async e => {
+  const f = e.target.files[0];
+  e.target.value = "";
+  if (!f) return;
+  try{
+    const text = await f.text();
+    document.getElementById("src").value = text;
+    loadFrom(text, f.name);
+  }catch(err){
+    document.getElementById("msg").textContent = "Couldn't read that file.";
+  }
 });
+
+document.getElementById("load").addEventListener("click", () => {
+  loadFrom(document.getElementById("src").value, "");
+});
+
 document.getElementById("reset").addEventListener("click", () => {
-  posts = []; document.getElementById("src").value = "";
-  document.getElementById("msg").textContent = ""; render();
+  posts = [];
+  document.getElementById("src").value = "";
+  document.getElementById("file").value = "";
+  document.getElementById("msg").textContent = "";
+  render();
 });
 document.getElementById("uncheck").addEventListener("click", () => {
   posts.forEach(p => p.done = false); render();
