@@ -292,7 +292,7 @@ function render(){
     if (r.error){
       el.innerHTML = `<div class="rhead"><span class="pnum">${i+1}</span>
         <span class="errmsg">${escapeHtml(r.error)}</span></div>
-        <div class="src">${escapeHtml(r.src)}</div>`;
+        <div class="src"><a href="${escapeHtml(linkOf(r))}" target="_blank" rel="noopener">${escapeHtml(r.src)}</a></div>`;
       out.appendChild(el); return;
     }
     const p = postFor(r);
@@ -312,7 +312,7 @@ function render(){
       <pre class="cite">${escapeHtml(p.text)}</pre>
       ${p.trimmed ? `<div class="warn">Author list shortened with “…” so the post fits.</div>` : ""}
       ${over ? `<div class="warn err">${p.cost - p.limit} over even with the shortest author list — trim the title by hand.</div>` : ""}
-      <div class="src">${escapeHtml(r.doi)}</div>`;
+      <div class="src"><a href="${escapeHtml(linkOf(r))}" target="_blank" rel="noopener">${escapeHtml(r.doi)}</a></div>`;
 
     el.querySelector("[data-tag]").addEventListener("change", e => { r.tag = e.target.value; render(); });
     el.querySelector("[data-copy]").addEventListener("click", async e => {
@@ -326,34 +326,49 @@ function render(){
   renderTable();
 }
 
-const COLS = ["#","Link","DOI","Type","Year","Journal","Title","Hashtag","Post text","Chars"];
+function linkOf(r){
+  if (r.url) return r.url;
+  if (/^https?:\/\//i.test(r.src)) return r.src;
+  if (r.doi) return "https://doi.org/" + r.doi;
+  return r.src;
+}
+
+const COLS = ["Title","Journal","Year","URL","Chars","Post text"];
 function tableData(){
-  return rows.map((r,i) => {
-    if (r.error) return [i+1, r.src, r.doi||"", "not found","","","","","",""];
+  return rows.map(r => {
+    if (r.error) return {title: r.error, journal:"", year:"", url: linkOf(r), chars:"", post:""};
     const w = r.work, p = postFor(r);
     const isPre = w.type === "posted-content";
-    const tag = tagFor(r);
-    return [
-      i+1, r.url, r.doi,
-      isPre ? "Preprint" : (/Review/i.test(tag) ? "Review" : "Research article"),
-      ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "",
-      isPre ? (w["group-title"]||"bioRxiv") : ((w["container-title"]||[])[0]||""),
-      stripTags((w.title||[])[0]),
-      tag, p.text, p.cost
-    ];
+    return {
+      title:   stripTags((w.title||[])[0]),
+      journal: isPre ? (w["group-title"]||"bioRxiv") : ((w["container-title"]||[])[0]||""),
+      year:    ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "",
+      url:     linkOf(r),
+      chars:   p.cost,
+      post:    p.text
+    };
   });
 }
 function renderTable(){
   const data = tableData();
   document.getElementById("tblsec").hidden = !data.length;
-  const t = document.getElementById("tbl");
-  t.innerHTML = "<tr>" + COLS.map(c=>`<th>${c}</th>`).join("") + "</tr>" +
-    data.map(row => "<tr>" + row.map(c => `<td>${escapeHtml(String(c))}</td>`).join("") + "</tr>").join("");
+  document.getElementById("tbl").innerHTML =
+    "<tr>" + COLS.map(c => `<th>${c}</th>`).join("") + "</tr>" +
+    data.map(d => "<tr>"
+      + `<td>${escapeHtml(d.title)}</td>`
+      + `<td>${escapeHtml(d.journal)}</td>`
+      + `<td>${escapeHtml(String(d.year))}</td>`
+      + `<td>${d.url ? `<a href="${escapeHtml(d.url)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(d.url))}</a>` : ""}</td>`
+      + `<td>${escapeHtml(String(d.chars))}</td>`
+      + `<td>${escapeHtml(d.post)}</td>`
+      + "</tr>").join("");
 }
 function toDelimited(sep){
   const q = v => { const s = String(v); return sep === "," && /[",\n]/.test(s)
     ? '"' + s.replace(/"/g,'""') + '"' : s.replace(/\t/g," "); };
-  return [COLS.join(sep)].concat(tableData().map(r => r.map(q).join(sep))).join("\n");
+  return [COLS.join(sep)].concat(
+    tableData().map(d => [d.title, d.journal, d.year, d.url, d.chars, d.post].map(q).join(sep))
+  ).join("\n");
 }
 document.getElementById("csv").addEventListener("click", () => {
   const blob = new Blob(["﻿" + toDelimited(",")], {type:"text/csv;charset=utf-8"});
