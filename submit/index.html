@@ -62,7 +62,14 @@ description: Write your thread in a word processor first. Once you have it, past
   .altbox { margin-top: 0.6rem; }
   .altbox label { font-size: 0.85rem; color: var(--text-light); }
 
-  aside { position: sticky; top: 1rem; font-size: 0.9rem; }
+  .cols { display: flex; gap: 1.5rem; align-items: flex-start; }
+  .colmain { flex: 1; min-width: 0; }
+  aside { float: none; flex: none; width: 20rem; margin-inline-start: 0;
+          position: sticky; top: 1rem; font-size: 0.9rem; padding: 0.8rem 1rem; }
+  @media (max-width: 60rem) {
+    .cols { display: block; }
+    aside { width: auto; position: static; margin-bottom: 1.5rem; }
+  }
   aside h3 { margin: 0 0 0.4rem; font-size: 1rem; }
   .chk { display: flex; gap: 0.5rem; padding: 0.3rem 0; align-items: flex-start;
          border-bottom: 1px solid var(--border); }
@@ -86,29 +93,33 @@ description: Write your thread in a word processor first. Once you have it, past
   <p class="note">Your files are checked in your browser only — nothing is uploaded from this page.</p>
 </details>
 
-<aside>
-  <h3>Checklist</h3>
-  <div id="checks"></div>
-  <p class="note">Drafts are saved in this browser automatically.</p>
-</aside>
+<div class="cols">
+  <div class="colmain">
+    <p>
+      <label>Your name <input type="text" id="who" placeholder="Jane Doe"></label>
+      <label>Bluesky handle <input type="text" id="handle" placeholder="@you.bsky.social"></label>
+    </p>
 
-<p>
-  <label>Your name <input type="text" id="who" placeholder="Jane Doe"></label>
-  <label>Bluesky handle <input type="text" id="handle" placeholder="@you.bsky.social"></label>
-</p>
+    <div id="posts"></div>
 
-<div id="posts"></div>
+    <div class="actions">
+      <button id="add">+ Add post</button>
+      <button class="sec" id="clear">Clear all</button>
+    </div>
 
-<div class="actions">
-  <button id="add">+ Add post</button>
-  <button class="sec" id="clear">Clear all</button>
-</div>
+    <h3>Submission</h3>
+    <textarea class="out" id="out" readonly></textarea>
+    <div class="actions">
+      <button id="copy">Copy submission</button>
+      <button class="sec" id="dl">Download .txt</button>
+    </div>
+  </div>
 
-<h3>Submission</h3>
-<textarea class="out" id="out" readonly></textarea>
-<div class="actions">
-  <button id="copy">Copy submission</button>
-  <button class="sec" id="dl">Download .txt</button>
+  <aside>
+    <h3>Checklist</h3>
+    <div id="checks"></div>
+    <p class="note">Drafts are saved in this browser automatically.</p>
+  </aside>
 </div>
 
 {% raw %}
