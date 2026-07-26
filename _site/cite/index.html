@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1Y22TBWNZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G1Y22TBWNZ');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Citation generator | Epithelial Mechanics Fan Club</title>
+    <meta name="description" content="Paste paper links, get ready-to-post APA citations with the hashtag, trimmed to fit Bluesky." />
+    <link rel="stylesheet" href="/assets/css/simple.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="canonical" href="http://localhost:4000/cite/">
+    <link rel="alternate" type="application/rss+xml" title="Epithelial Mechanics Fan Club" href="http://localhost:4000/feed.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:4000/sitemap.xml" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favico/site.webmanifest">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+    
+    <a href="/" >Home</a>
+    
+    <a href="/about/" >About</a>
+    
+    <a href="/threads/" >Threads</a>
+    
+    <a href="/delegates" >Delegates</a>
+    
+    <a href="/contact" >Contact</a>
+    
+  </nav>
+      <h1>Citation generator</h1>
+      <p>Paste paper links, get ready-to-post APA citations with the hashtag, trimmed to fit Bluesky.</p> 
+    </header>
+
+    <main>
+
+      <style>
+  body { grid-template-columns: 1fr min(66rem, 94%) 1fr; }
+  summary { word-break: normal; }
+
+  :root { --ok: #1a7f4b; --okbg: #e8f5ee; --bad: #b3261e; --badbg: #fdecea;
+          --warnc: #8a5a00; --warnbg: #fdf3e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ok: #5ddc8c; --okbg: #12301f; --bad: #ff8a80; --badbg: #3a1512;
+            --warnc: #f0c04a; --warnbg: #33260a; }
+  }
+
+  button.sec { background: var(--bg); border-color: var(--border); color: var(--text); }
+  button.sec:enabled:hover { background: var(--disabled); border-color: var(--border); }
+  button.tiny { padding: 0.15rem 0.5rem; font-size: 0.85rem; }
+  .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem; }
+  .note { color: var(--text-light); font-size: 0.85rem; }
+  .mono { font-family: var(--mono-font); font-size: 0.8rem; }
+
+  .opts { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .opts label { display: flex; gap: 0.4rem; align-items: center; font-size: 0.9rem; }
+  .opts select, .opts input { margin-bottom: 0; }
+
+  article.bad { border-color: var(--bad); }
+  .rhead { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.5rem; }
+  .rhead select { margin-bottom: 0; }
+  .pnum { font-weight: bold; font-size: 0.85rem; background: var(--text); color: var(--bg);
+          border-radius: var(--standard-border-radius); padding: 0.1rem 0.5rem; }
+  .count { font-variant-numeric: tabular-nums; font-weight: bold; font-size: 0.8rem;
+           padding: 0.1rem 0.55rem; border-radius: 1rem; background: var(--okbg); color: var(--ok); }
+  .count.bad { background: var(--badbg); color: var(--bad); }
+  button.copy.done { background: var(--ok); border-color: var(--ok); }
+
+  pre.cite { white-space: pre-wrap; word-wrap: break-word; color: var(--text);
+             font-family: var(--sans-font); font-size: 1rem; }
+  .src { font-size: 0.8rem; color: var(--text-light); word-break: break-all; margin-top: 0.4rem; }
+  .warn { margin-top: 0.5rem; font-size: 0.9rem; padding: 0.4rem 0.7rem;
+          border-radius: var(--standard-border-radius); background: var(--warnbg); color: var(--warnc); }
+  .warn.err { background: var(--badbg); color: var(--bad); }
+  .errmsg { font-size: 0.9rem; color: var(--bad); }
+  .tblwrap { overflow-x: auto; }
+  table { font-size: 0.8rem; }
+</style>
+
+<details open>
+  <summary>How it works</summary>
+  <p>Metadata comes from <b>Crossref</b>, which covers journals, bioRxiv and the newer openRxiv DOIs.
+  Paste DOIs or article URLs, one per line — the DOI is pulled out of the URL automatically, and PMC
+  links are resolved through NCBI first.</p>
+  <p class="note">Paste the generated text into the Bluesky composer with the full URL — the composer
+  shortens it for display, which is what the character count already assumes.</p>
+</details>
+
+<textarea class="mono" id="src" rows="6" placeholder="https://doi.org/10.1038/nature21718&#10;10.1242/jcs.263786&#10;https://www.biorxiv.org/content/10.1101/2025.07.03.661686v1"></textarea>
+
+<div class="opts">
+  <label>Default hashtag
+    <select id="tag">
+      <option value="#EpithelialMechanics">#EpithelialMechanics</option>
+      <option value="#EpithelialMechanicsReview">#EpithelialMechanicsReview</option>
+      <option value="#EpithelialMechanicsReviews">#EpithelialMechanicsReviews</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="autotag" checked> Auto-detect reviews</label>
+  <label>Limit <input type="number" id="limit" value="300" min="100" max="300" style="width:6rem"></label>
+</div>
+
+<div class="actions">
+  <button id="go">Generate</button>
+  <button class="sec" id="clr">Clear</button>
+  <span class="note" id="msg"></span>
+</div>
+
+<div id="out"></div>
+
+<div id="tblsec" hidden>
+  <h3>Table</h3>
+  <div class="tblwrap"><table id="tbl"></table></div>
+  <div class="actions">
+    <button class="sec" id="csv">Download CSV</button>
+    <button class="sec" id="tsv">Copy for Excel</button>
+  </div>
+</div>
+
+
+<script>
+"use strict";
+
+const SEG = (typeof Intl !== "undefined" && Intl.Segmenter)
+  ? new Intl.Segmenter(undefined,{granularity:"grapheme"}) : null;
+function graphemes(s){
+  if (SEG){ let n=0; for (const _ of SEG.segment(s)) n++; return n; }
+  return Array.from(s).length;
+}
+function shortUrl(u){
+  try{
+    const p = new URL(u.trim());
+    if (p.protocol!=="http:" && p.protocol!=="https:") return u.trim();
+    const s = p.host.replace(/^www\./,"") + (p.pathname==="/"?"":p.pathname) + p.search + p.hash;
+    return s.length > 30 ? s.slice(0,27)+"..." : s;
+  }catch(e){ return u.trim(); }
+}
+
+function extractDoi(raw){
+  const line = raw.trim();
+  if (!line) return null;
+  let m = line.match(/10\.\d{4,9}\/[^\s"'<>]+/);
+  if (m){
+    return m[0]
+      .replace(/[).,;]+$/,"")
+      .replace(/v\d+(\.full)?(\.pdf)?$/i,"")
+      .replace(/\.full(-text)?$/i,"")
+      .replace(/\?.*$/,"");
+  }
+  m = line.match(/nature\.com\/articles\/([a-z0-9.\-]+)/i);
+  if (m) return "10.1038/" + m[1].replace(/\?.*$/,"");
+  m = line.match(/rupress\.org\/(jcb|jem|jgp)\/[^?]*?\/e(\d{9})/i);
+  if (m) return "10.1083/" + m[1].toLowerCase() + "." + m[2];
+  return null;
+}
+function extractPmc(raw){
+  const m = raw.match(/\bPMC(\d{5,9})\b/i);
+  return m ? "PMC" + m[1] : null;
+}
+async function pmcToDoi(pmcid){
+  const r = await fetch("https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?format=json&ids=" + pmcid);
+  if (!r.ok) throw new Error("PMC lookup failed (" + r.status + ")");
+  const rec = ((await r.json()).records || [])[0] || {};
+  if (!rec.doi) throw new Error("No DOI registered for " + pmcid);
+  return rec.doi;
+}
+
+function initials(given){
+  if (!given) return "";
+  return given.split(/[\s.]+/).filter(Boolean)
+    .map(part => part.split("-").map(x => x.charAt(0).toUpperCase()+".").join("-"))
+    .join(" ");
+}
+function authorName(a){
+  if (a.family) return a.family + (a.given ? ", " + initials(a.given) : "");
+  return a.name || "";
+}
+function authorList(authors, keep){
+  const names = authors.map(authorName).filter(Boolean);
+  if (!names.length) return "";
+  if (names.length === 1) return names[0];
+  const last2 = names.slice(-2);
+  if (keep && names.length > keep + 2){
+    return names.slice(0, keep).join(", ") + ", ... " + last2[0] + ", & " + last2[1];
+  }
+  return names.slice(0,-1).join(", ") + ", & " + names[names.length-1];
+}
+function stripTags(s){ return String(s||"").replace(/<[^>]*>/g,"").replace(/\s+/g," ").trim(); }
+
+function looksLikeReview(w){
+  const c = (w["container-title"]||[])[0] || "";
+  const t = stripTags((w.title||[])[0]);
+  if ((w.subtype||"").toLowerCase().includes("review")) return true;
+  return /(^|\s)(nature reviews|trends in|current opinion|annual review|reviews?)\b/i.test(c)
+      || /\bat a glance\b/i.test(t);
+}
+
+function buildCitation(w, keep){
+  const authors = authorList(w.author || [], keep);
+  const year    = ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "n.d.";
+  const title   = stripTags((w.title||[])[0]) || "Untitled";
+  const isPre   = w.type === "posted-content";
+  const cont    = isPre ? (w["group-title"] || "bioRxiv")
+                        : stripTags((w["container-title"]||[])[0] || "");
+  const vol     = w.volume || "";
+  const iss     = w.issue || "";
+  const pages   = w.page || w["article-number"] || "";
+
+  let s = (authors ? authors + " " : "") + "(" + year + "). " + title;
+  if (!/[.?!]$/.test(s)) s += ".";
+  if (cont){
+    s += " " + cont;
+    if (vol)   s += ", " + vol + (iss ? "(" + iss + ")" : "");
+    if (pages) s += ", " + String(pages).replace(/-/g,"–");
+    s += ".";
+  }
+  return s;
+}
+
+let rows = [];
+
+async function lookup(doi){
+  const r = await fetch("https://api.crossref.org/works/" + encodeURI(doi));
+  if (!r.ok) throw new Error(r.status === 404 ? "Not found in Crossref" : "Crossref error " + r.status);
+  return (await r.json()).message;
+}
+
+document.getElementById("go").addEventListener("click", async () => {
+  const lines = document.getElementById("src").value.split("\n").map(s=>s.trim()).filter(Boolean);
+  const msg = document.getElementById("msg");
+  const out = document.getElementById("out");
+  if (!lines.length){ msg.textContent = "Nothing to look up."; return; }
+
+  rows = []; out.innerHTML = ""; document.getElementById("tblsec").hidden = true;
+
+  for (let i = 0; i < lines.length; i++){
+    msg.textContent = `Looking up ${i+1} of ${lines.length}…`;
+    const src = lines[i];
+    let doi = extractDoi(src);
+    try{
+      if (!doi){
+        const pmc = extractPmc(src);
+        if (!pmc) throw new Error("No DOI found in that link — paste the DOI itself.");
+        doi = await pmcToDoi(pmc);
+      }
+      const w = await lookup(doi);
+      const url = /^https?:\/\//i.test(src) ? src : "https://doi.org/" + doi;
+      rows.push({src, doi, url, work:w, review:looksLikeReview(w), tag:null});
+    }catch(e){
+      rows.push({src, doi, error:e.message});
+    }
+    await new Promise(r => setTimeout(r, 200));
+  }
+  msg.textContent = `${rows.filter(r=>!r.error).length} of ${lines.length} resolved`;
+  render();
+});
+
+function tagFor(r){
+  if (r.tag) return r.tag;
+  const base = document.getElementById("tag").value;
+  if (document.getElementById("autotag").checked && r.review){
+    return base.startsWith("#EpithelialMechanicsReview") ? base : "#EpithelialMechanicsReview";
+  }
+  return base;
+}
+
+function postFor(r){
+  const limit = +document.getElementById("limit").value || 300;
+  const tag = tagFor(r);
+  const nAuthors = (r.work.author || []).length;
+  let keep = 0, text = "", cost = 0;
+  for (let k = nAuthors; k >= 1; k--){
+    const cite = buildCitation(r.work, k >= nAuthors ? 0 : k);
+    text = cite + " " + r.url + " " + tag;
+    cost = graphemes(cite) + 1 + graphemes(shortUrl(r.url)) + 1 + graphemes(tag);
+    keep = k;
+    if (cost <= limit) break;
+  }
+  return {text, cost, trimmed: keep < nAuthors, limit};
+}
+
+function render(){
+  const out = document.getElementById("out");
+  out.innerHTML = "";
+  rows.forEach((r, i) => {
+    const el = document.createElement("article");
+    if (r.error){
+      el.innerHTML = `<div class="rhead"><span class="pnum">${i+1}</span>
+        <span class="errmsg">${escapeHtml(r.error)}</span></div>
+        <div class="src">${escapeHtml(r.src)}</div>`;
+      out.appendChild(el); return;
+    }
+    const p = postFor(r);
+    const over = p.cost > p.limit;
+    el.className = over ? "bad" : "";
+    el.innerHTML = `
+      <div class="rhead">
+        <span class="pnum">${i+1}</span>
+        <select data-tag>
+          ${["#EpithelialMechanics","#EpithelialMechanicsReview","#EpithelialMechanicsReviews"]
+            .map(t => `<option value="${t}"${tagFor(r)===t?" selected":""}>${t}</option>`).join("")}
+        </select>
+        <span class="count ${over?"bad":""}">${p.cost}/${p.limit}</span>
+        <span style="flex:1"></span>
+        <button class="copy" data-copy>Copy</button>
+      </div>
+      <pre class="cite">${escapeHtml(p.text)}</pre>
+      ${p.trimmed ? `<div class="warn">Author list shortened with “…” so the post fits.</div>` : ""}
+      ${over ? `<div class="warn err">${p.cost - p.limit} over even with the shortest author list — trim the title by hand.</div>` : ""}
+      <div class="src">${escapeHtml(r.doi)}</div>`;
+
+    el.querySelector("[data-tag]").addEventListener("change", e => { r.tag = e.target.value; render(); });
+    el.querySelector("[data-copy]").addEventListener("click", async e => {
+      try{ await navigator.clipboard.writeText(postFor(r).text);
+           e.target.textContent = "Copied"; e.target.classList.add("done");
+           setTimeout(()=>{e.target.textContent="Copy"; e.target.classList.remove("done");}, 1400);
+      }catch(err){}
+    });
+    out.appendChild(el);
+  });
+  renderTable();
+}
+
+const COLS = ["#","Link","DOI","Type","Year","Journal","Title","Hashtag","Post text","Chars"];
+function tableData(){
+  return rows.map((r,i) => {
+    if (r.error) return [i+1, r.src, r.doi||"", "not found","","","","","",""];
+    const w = r.work, p = postFor(r);
+    const isPre = w.type === "posted-content";
+    return [
+      i+1, r.url, r.doi,
+      isPre ? "Preprint" : (r.review ? "Review" : "Research article"),
+      ((w.issued||{})["date-parts"]||[[ ]])[0][0] || "",
+      isPre ? (w["group-title"]||"bioRxiv") : ((w["container-title"]||[])[0]||""),
+      stripTags((w.title||[])[0]),
+      tagFor(r), p.text, p.cost
+    ];
+  });
+}
+function renderTable(){
+  const data = tableData();
+  document.getElementById("tblsec").hidden = !data.length;
+  const t = document.getElementById("tbl");
+  t.innerHTML = "<tr>" + COLS.map(c=>`<th>${c}</th>`).join("") + "</tr>" +
+    data.map(row => "<tr>" + row.map(c => `<td>${escapeHtml(String(c))}</td>`).join("") + "</tr>").join("");
+}
+function toDelimited(sep){
+  const q = v => { const s = String(v); return sep === "," && /[",\n]/.test(s)
+    ? '"' + s.replace(/"/g,'""') + '"' : s.replace(/\t/g," "); };
+  return [COLS.join(sep)].concat(tableData().map(r => r.map(q).join(sep))).join("\n");
+}
+document.getElementById("csv").addEventListener("click", () => {
+  const blob = new Blob(["﻿" + toDelimited(",")], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "epimechfc-citations.csv"; a.click();
+});
+document.getElementById("tsv").addEventListener("click", async e => {
+  try{ await navigator.clipboard.writeText(toDelimited("\t"));
+       e.target.textContent = "Copied"; setTimeout(()=>e.target.textContent="Copy for Excel",1400);
+  }catch(err){}
+});
+document.getElementById("clr").addEventListener("click", () => {
+  rows = []; document.getElementById("src").value = "";
+  document.getElementById("out").innerHTML = "";
+  document.getElementById("msg").textContent = "";
+  document.getElementById("tblsec").hidden = true;
+});
+["tag","autotag","limit"].forEach(id =>
+  document.getElementById(id).addEventListener("change", () => { rows.forEach(r=>r.tag=null); render(); }));
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
+</script>
+
+
+
+    </main>
+
+    <footer>
+      <!--
+      <p>Maintained by <a href="\about"> Nimesh Chahare and Julia Eckert </a> <br> Last-updated: October 23rd, 2025 </p>
+      -->
+      <p>Maintained by <a href="\about"> Nimesh Chahare and Julia Eckert </a></p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1Y22TBWNZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G1Y22TBWNZ');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thread builder | Epithelial Mechanics Fan Club</title>
+    <meta name="description" content="Write your thread in a word processor first. Once you have it, paste the posts in here one by one to check the limits and prepare your final submission." />
+    <link rel="stylesheet" href="/assets/css/simple.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="canonical" href="http://localhost:4000/submit/">
+    <link rel="alternate" type="application/rss+xml" title="Epithelial Mechanics Fan Club" href="http://localhost:4000/feed.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:4000/sitemap.xml" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favico/site.webmanifest">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+    
+    <a href="/" >Home</a>
+    
+    <a href="/about/" >About</a>
+    
+    <a href="/threads/" >Threads</a>
+    
+    <a href="/delegates" >Delegates</a>
+    
+    <a href="/contact" >Contact</a>
+    
+  </nav>
+      <h1>Thread builder</h1>
+      <p>Write your thread in a word processor first. Once you have it, paste the posts in here one by one to check the limits and prepare your final submission.</p> 
+    </header>
+
+    <main>
+
+      <style>
+  body { grid-template-columns: 1fr min(70rem, 94%) 1fr; }
+  summary { word-break: normal; }
+
+  :root {
+    --ok: #1a7f4b;  --okbg: #e8f5ee;
+    --bad: #b3261e; --badbg: #fdecea;
+    --warnc: #8a5a00; --warnbg: #fdf3e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ok: #5ddc8c;  --okbg: #12301f;
+      --bad: #ff8a80; --badbg: #3a1512;
+      --warnc: #f0c04a; --warnbg: #33260a;
+    }
+  }
+
+  button.sec { background: var(--bg); border-color: var(--border); color: var(--text); }
+  button.sec:enabled:hover { background: var(--disabled); border-color: var(--border); }
+  button.tiny { padding: 0.15rem 0.5rem; font-size: 0.85rem; }
+  .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem; }
+  .note { color: var(--text-light); font-size: 0.85rem; }
+
+  article.over { border-color: var(--bad); }
+  .rowtop { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+  .rowtop select { margin-bottom: 0; }
+  .pnum { font-weight: bold; font-size: 0.85rem; background: var(--text); color: var(--bg);
+          border-radius: var(--standard-border-radius); padding: 0.1rem 0.5rem; }
+
+  .meter { display: flex; align-items: center; gap: 0.7rem; margin-top: 0.4rem; flex-wrap: wrap; font-size: 0.85rem; }
+  .count { font-variant-numeric: tabular-nums; font-weight: bold; padding: 0.1rem 0.55rem; border-radius: 1rem; }
+  .count.ok { background: var(--okbg); color: var(--ok); }
+  .count.near { background: var(--warnbg); color: var(--warnc); }
+  .count.bad { background: var(--badbg); color: var(--bad); }
+  .bar { flex: 1; min-width: 8rem; height: 5px; background: var(--disabled); border-radius: 3px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--ok); }
+  .bar.near i { background: var(--warnc); } .bar.bad i { background: var(--bad); }
+
+  .alert { margin-top: 0.5rem; font-size: 0.9rem; padding: 0.4rem 0.7rem;
+           border-radius: var(--standard-border-radius); background: var(--badbg); color: var(--bad); }
+  .alert.warn { background: var(--warnbg); color: var(--warnc); }
+
+  .links, .media { margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px dashed var(--border); }
+  .links h4 { margin: 0 0 0.4rem; font-size: 0.85rem; color: var(--text-light); font-weight: normal; }
+  .linkrow { display: flex; gap: 0.5rem; align-items: center; }
+  .linkrow input { flex: 1; min-width: 0; }
+  .linkcost { font-size: 0.8rem; color: var(--text-light); white-space: nowrap; }
+  .media { display: flex; gap: 0.7rem; align-items: flex-start; flex-wrap: wrap; }
+  .thumb { width: 64px; height: 64px; object-fit: cover; flex: none; }
+  .mstat { font-size: 0.85rem; flex: 1; min-width: 12rem; }
+  .pill { display: inline-block; font-size: 0.75rem; font-weight: bold; padding: 0.1rem 0.5rem;
+          border-radius: 1rem; margin-right: 0.3rem; }
+  .pill.ok { background: var(--okbg); color: var(--ok); }
+  .pill.bad { background: var(--badbg); color: var(--bad); }
+  .pill.info { background: var(--disabled); color: var(--text-light); }
+  .altbox { margin-top: 0.6rem; }
+  .altbox label { font-size: 0.85rem; color: var(--text-light); }
+
+  aside { position: sticky; top: 1rem; font-size: 0.9rem; }
+  aside h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+  .chk { display: flex; gap: 0.5rem; padding: 0.3rem 0; align-items: flex-start;
+         border-bottom: 1px solid var(--border); }
+  .chk:last-child { border-bottom: none; }
+  .chk b { flex: none; width: 1rem; text-align: center; }
+  .chk.pass b { color: var(--ok); } .chk.fail b, .chk.fail { color: var(--bad); }
+
+  .out { font-family: var(--mono-font); font-size: 0.8rem; min-height: 16rem; }
+</style>
+
+<details>
+  <summary>Thread rules</summary>
+  <ul>
+    <li><b>Post 0 — introduction.</b> Introduce yourself. No paper needed. Must include an eye-catching image or movie.</li>
+    <li><b>Paper posts.</b> Your story about the paper, plus the paper link. At least 4 research articles (preprints count) and 1 review.</li>
+    <li><b>Context / commentary posts.</b> Background, history, a transition between papers, an open question. No paper needed — use as many as you like.</li>
+    <li><b>Closing post(s).</b> Summary, personal opinion, open questions, or thanks. Link the labs mentioned, e.g. <code>@epimechfc.bsky.social</code>.</li>
+    <li><b>Length: 275 characters including spaces</b> for your text. Paper links go in their own box and are not counted against it.</li>
+    <li><b>Media:</b> required for Post 0 only. Optional but very welcome on the rest. Images JPEG/PNG, max 1&nbsp;MB. Movies MOV/MP4. Name them <code>Post0</code>, <code>Post1</code>, … to match the post numbers.</li>
+  </ul>
+  <p class="note">Your files are checked in your browser only — nothing is uploaded from this page.</p>
+</details>
+
+<aside>
+  <h3>Checklist</h3>
+  <div id="checks"></div>
+  <p class="note">Drafts are saved in this browser automatically.</p>
+</aside>
+
+<p>
+  <label>Your name <input type="text" id="who" placeholder="Jane Doe"></label>
+  <label>Bluesky handle <input type="text" id="handle" placeholder="@you.bsky.social"></label>
+</p>
+
+<div id="posts"></div>
+
+<div class="actions">
+  <button id="add">+ Add post</button>
+  <button class="sec" id="clear">Clear all</button>
+</div>
+
+<h3>Submission</h3>
+<textarea class="out" id="out" readonly></textarea>
+<div class="actions">
+  <button id="copy">Copy submission</button>
+  <button class="sec" id="dl">Download .txt</button>
+</div>
+
+
+<script>
+"use strict";
+
+const TEXT_LIMIT = 275;
+const POST_LIMIT = 300;
+
+const SEG = (typeof Intl !== "undefined" && Intl.Segmenter)
+  ? new Intl.Segmenter(undefined, {granularity:"grapheme"}) : null;
+function graphemes(s){
+  if (SEG){ let n = 0; for (const _ of SEG.segment(s)) n++; return n; }
+  return Array.from(s).length;
+}
+
+const URL_RE = /https?:\/\/[^\s<>"']+/gi;
+
+function shortUrl(u){
+  try{
+    const p = new URL(u.trim());
+    if (p.protocol !== "http:" && p.protocol !== "https:") return u.trim();
+    const s = p.host.replace(/^www\./,"") + (p.pathname === "/" ? "" : p.pathname) + p.search + p.hash;
+    return s.length > 30 ? s.slice(0,27) + "..." : s;
+  }catch(e){ return u.trim(); }
+}
+
+function postedLength(p){
+  const live = (p.links||[]).filter(l => l.trim());
+  return graphemes(p.text) + live.reduce((n,l) => n + graphemes(shortUrl(l)) + 1, 0);
+}
+
+const KEY = "epimechfc-thread-v2";
+let state = load() || {
+  who:"", handle:"",
+  posts:[
+    {kind:"intro",  cat:"",         text:"", links:[],   media:null},
+    {kind:"context",cat:"",         text:"", links:[],   media:null},
+    {kind:"paper",  cat:"research", text:"", links:[""], media:null},
+    {kind:"paper",  cat:"research", text:"", links:[""], media:null},
+    {kind:"paper",  cat:"research", text:"", links:[""], media:null},
+    {kind:"paper",  cat:"research", text:"", links:[""], media:null},
+    {kind:"paper",  cat:"review",   text:"", links:[""], media:null},
+    {kind:"closing",cat:"",         text:"", links:[],   media:null}
+  ]
+};
+
+function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+
+const IMG_OK = ["image/jpeg","image/png"];
+const VID_OK = ["video/quicktime","video/mp4"];
+const MB = 1024*1024;
+
+function checkFile(f, idx){
+  const kb = f.size/1024;
+  const size = kb < 1024 ? kb.toFixed(0)+" KB" : (kb/1024).toFixed(2)+" MB";
+  const r = {name:f.name, size, type:f.type, problems:[], preview:null, alt:""};
+  const isImg = IMG_OK.includes(f.type);
+  const isVid = VID_OK.includes(f.type) || /\.(mov|mp4)$/i.test(f.name);
+  if (!isImg && !isVid) r.problems.push("Format must be JPEG, PNG, MOV or MP4");
+  if (isImg && f.size > 1*MB)  r.problems.push("Image is over the 1 MB limit ("+size+")");
+  if (isVid && f.size > 50*MB) r.problems.push("Video is over Bluesky's 50 MB limit ("+size+")");
+  const want = "Post"+idx+(isImg ? (f.type==="image/png"?".png":".jpg")
+                                 : (/\.mov$/i.test(f.name)?".mov":".mp4"));
+  if (f.name.toLowerCase() !== want.toLowerCase()) r.rename = want;
+  if (isImg) r.preview = URL.createObjectURL(f);
+  return r;
+}
+
+const elPosts = document.getElementById("posts");
+
+const PLACEHOLDER = {
+  intro:   "Introduce yourself — who you are, what you work on, why this topic. No paper needed here.",
+  paper:   "Author et al., 2025 — your story about this paper. Put the DOI in the box below, not here.",
+  context: "Background, history, a transition between papers, an open question… no paper needed.",
+  closing: "Summary, personal opinion, open questions, or thanks. Link the labs you mentioned."
+};
+const KIND_LABEL = {intro:"Introduction", paper:"Paper post", context:"Context / commentary", closing:"Closing post"};
+
+function render(){
+  document.getElementById("who").value = state.who;
+  document.getElementById("handle").value = state.handle;
+  elPosts.innerHTML = "";
+  state.posts.forEach((p,i) => elPosts.appendChild(postCard(p,i)));
+  renderChecks(); renderOut(); save();
+}
+
+function meterHtml(p){
+  const used = graphemes(p.text);
+  const pct  = Math.min(100, used/TEXT_LIMIT*100);
+  const cls  = used > TEXT_LIMIT ? "bad" : used > TEXT_LIMIT*0.92 ? "near" : "ok";
+  const total = postedLength(p);
+  const nlinks = (p.links||[]).filter(l=>l.trim()).length;
+
+  let extra = "";
+  if (nlinks) extra = `<span class="note">+ ${nlinks} link${nlinks>1?"s":""} &rarr; posts as ${total}/${POST_LIMIT}</span>`;
+
+  let alert = "";
+  if (used > TEXT_LIMIT)
+    alert = `<div class="alert">Your text is ${used-TEXT_LIMIT} character${used-TEXT_LIMIT>1?"s":""} over the 275 limit.</div>`;
+  else if (total > POST_LIMIT)
+    alert = `<div class="alert">With ${nlinks} links attached this post is ${total-POST_LIMIT} over Bluesky's 300 limit. Trim the text or move a paper to its own post.</div>`;
+
+  URL_RE.lastIndex = 0;
+  if (URL_RE.test(p.text))
+    alert += `<div class="alert warn">There's a URL in your text. Put it in the link box below instead — then it won't count against your 275.</div>`;
+
+  return `<div class="meter">
+      <span class="count ${cls}">${used} / ${TEXT_LIMIT}</span>
+      <span class="bar ${cls}"><i style="width:${pct}%"></i></span>
+      ${extra}
+    </div>${alert}`;
+}
+
+function postCard(p, i){
+  if (!p.links) p.links = [];
+  const card = document.createElement("article");
+  const bad = graphemes(p.text) > TEXT_LIMIT || postedLength(p) > POST_LIMIT;
+  card.className = bad ? "over" : "";
+
+  card.innerHTML = `
+    <div class="rowtop">
+      <span class="pnum">POST ${i}</span>
+      <select data-k="kind">
+        <option value="intro"${p.kind==="intro"?" selected":""}>Introduction</option>
+        <option value="paper"${p.kind==="paper"?" selected":""}>Paper post</option>
+        <option value="context"${p.kind==="context"?" selected":""}>Context / commentary</option>
+        <option value="closing"${p.kind==="closing"?" selected":""}>Closing post</option>
+      </select>
+      ${p.kind==="paper" ? `<select data-k="cat">
+        <option value="research"${p.cat==="research"?" selected":""}>Research article</option>
+        <option value="preprint"${p.cat==="preprint"?" selected":""}>Preprint</option>
+        <option value="review"${p.cat==="review"?" selected":""}>Review</option>
+      </select>` : ""}
+      <span style="flex:1"></span>
+      <button class="sec tiny" data-a="up" title="Move up">&uarr;</button>
+      <button class="sec tiny" data-a="down" title="Move down">&darr;</button>
+      <button class="sec tiny" data-a="del" title="Delete post">&#10005;</button>
+    </div>
+
+    <textarea data-k="text" placeholder="${PLACEHOLDER[p.kind] || "Write this post…"}">${escapeHtml(p.text)}</textarea>
+    <div data-meter>${meterHtml(p)}</div>
+
+    <div class="links">
+      <h4>${p.kind==="paper"
+        ? `Paper link${p.links.length>1?"s":""} (DOI or URL) — not counted in your 275`
+        : `Link${p.links.length>1?"s":""} (optional) — not counted in your 275`}</h4>
+      <div data-linkrows></div>
+      <button class="sec tiny" data-a="addlink">+ Add link</button>
+    </div>
+
+    <div class="media">
+      <img class="thumb" style="${p.media&&p.media.preview?"":"display:none"}"
+           src="${p.media&&p.media.preview?p.media.preview:""}" alt="">
+      <div class="mstat" data-mstat></div>
+      <input type="file" data-k="file" accept="image/jpeg,image/png,video/mp4,video/quicktime">
+    </div>
+    ${p.media ? `<div class="altbox">
+      <label for="alt${i}">Alt text (optional, but it makes your image readable to blind followers)</label>
+      <input id="alt${i}" type="text" data-k="alt" placeholder="Describe the image in a sentence…" value="${escapeHtml(p.media.alt||"")}">
+    </div>` : ""}`;
+
+  const rows = card.querySelector("[data-linkrows]");
+  if (!p.links.length) p.links.push("");
+  p.links.forEach((L, li) => {
+    const row = document.createElement("div");
+    row.className = "linkrow";
+    row.innerHTML = `
+      <input type="url" placeholder="https://doi.org/10.1038/…" value="${escapeHtml(L)}">
+      <span class="linkcost">${L.trim() ? escapeHtml(shortUrl(L))+" &middot; "+graphemes(shortUrl(L))+" ch" : ""}</span>
+      ${p.links.length>1 ? `<button class="sec tiny" data-rm>&#10005;</button>` : ""}`;
+    row.querySelector("input").addEventListener("input", e => {
+      state.posts[i].links[li] = e.target.value;
+      refreshMeter(card, i);
+      row.querySelector(".linkcost").innerHTML =
+        e.target.value.trim() ? escapeHtml(shortUrl(e.target.value))+" &middot; "+graphemes(shortUrl(e.target.value))+" ch" : "";
+      renderChecks(); renderOut(); save();
+    });
+    const rm = row.querySelector("[data-rm]");
+    if (rm) rm.addEventListener("click", () => { state.posts[i].links.splice(li,1); render(); });
+    rows.appendChild(row);
+  });
+
+  const ms = card.querySelector("[data-mstat]");
+  if (!p.media){
+    ms.innerHTML = i === 0
+      ? `<span class="pill bad">Required</span> <span class="note">Post 0 needs an eye-catching image or movie.</span>`
+      : `<span class="pill info">Optional</span> <span class="note">An image related to this post is welcome but not required.</span>`;
+  } else {
+    const prob = p.media.problems.length > 0;
+    ms.innerHTML =
+      `<span class="pill ${prob?"bad":"ok"}">${prob?"Problem":"OK"}</span>` +
+      `<b>${escapeHtml(p.media.name)}</b> <span class="note">${p.media.size}</span>` +
+      (prob ? `<div style="color:var(--bad);margin-top:0.25rem">${p.media.problems.map(escapeHtml).join("<br>")}</div>` : "") +
+      (p.media.rename ? `<div class="note" style="margin-top:0.25rem">Rename to <code>${p.media.rename}</code> before sending.</div>` : "");
+  }
+
+  card.querySelectorAll("[data-k]").forEach(el => {
+    const k = el.dataset.k;
+    if (k === "file"){
+      el.addEventListener("change", e => {
+        const f = e.target.files[0];
+        state.posts[i].media = f ? checkFile(f, i) : null;
+        render();
+      });
+    } else if (k === "text"){
+      el.addEventListener("input", e => {
+        state.posts[i].text = e.target.value;
+        refreshMeter(card, i); renderChecks(); renderOut(); save();
+      });
+    } else if (k === "alt"){
+      el.addEventListener("input", e => {
+        if (state.posts[i].media) state.posts[i].media.alt = e.target.value;
+        renderOut(); save();
+      });
+    } else {
+      el.addEventListener("change", e => { state.posts[i][k] = e.target.value; render(); });
+    }
+  });
+
+  card.querySelectorAll("[data-a]").forEach(b => b.addEventListener("click", () => {
+    const a = b.dataset.a;
+    if (a === "addlink") state.posts[i].links.push("");
+    if (a === "del" && state.posts.length > 1) state.posts.splice(i,1);
+    if (a === "up"   && i > 0) state.posts.splice(i-1, 0, state.posts.splice(i,1)[0]);
+    if (a === "down" && i < state.posts.length-1) state.posts.splice(i+1, 0, state.posts.splice(i,1)[0]);
+    render();
+  }));
+
+  return card;
+}
+
+function refreshMeter(card, i){
+  const p = state.posts[i];
+  card.querySelector("[data-meter]").innerHTML = meterHtml(p);
+  card.className = (graphemes(p.text) > TEXT_LIMIT || postedLength(p) > POST_LIMIT) ? "over" : "";
+}
+
+function renderChecks(){
+  const P = state.posts;
+  const research   = P.filter(p => p.kind==="paper" && (p.cat==="research"||p.cat==="preprint")).length;
+  const reviews    = P.filter(p => p.kind==="paper" && p.cat==="review").length;
+  const overText   = P.filter(p => graphemes(p.text) > TEXT_LIMIT).length;
+  const overPost   = P.filter(p => postedLength(p) > POST_LIMIT).length;
+  const empty      = P.filter(p => !p.text.trim()).length;
+  const noLink     = P.filter(p => p.kind==="paper" && !(p.links||[]).some(l=>l.trim())).length;
+  const intro      = P.filter(p => p.kind==="intro").length;
+  const firstMedia = !!(P[0] && P[0].media);
+  const withMedia  = P.filter(p => p.media).length;
+  const badMedia   = P.filter(p => p.media && p.media.problems.length).length;
+
+  const items = [
+    [intro===1,     `Exactly one introduction post ${intro!==1?`(you have ${intro})`:""}`],
+    [research>=4,   `At least 4 research articles or preprints (${research})`],
+    [reviews>=1,    `At least 1 review (${reviews})`],
+    [empty===0,     empty ? `${empty} post${empty>1?"s are":" is"} still empty` : "All posts written"],
+    [noLink===0,    noLink ? `${noLink} paper post${noLink>1?"s have":" has"} no link` : "Every paper post has a link"],
+    [overText===0,  overText ? `${overText} post${overText>1?"s exceed":" exceeds"} 275 characters` : "All text within 275"],
+    [overPost===0,  overPost ? `${overPost} post${overPost>1?"s won't":" won't"} fit once links are added` : "All posts fit on Bluesky"],
+    [firstMedia,    firstMedia ? "Post 0 has its image or movie" : "Post 0 still needs an image or movie"],
+    [badMedia===0,  badMedia ? `${badMedia} media file${badMedia>1?"s have":" has"} a format or size problem`
+                             : `All media files valid (${withMedia} attached)`]
+  ];
+  document.getElementById("checks").innerHTML = items.map(([ok,txt]) =>
+    `<div class="chk ${ok?"pass":"fail"}"><b>${ok?"✓":"✕"}</b><span>${txt}</span></div>`).join("");
+}
+
+function renderOut(){
+  const L = [];
+  L.push("EPIMECHFC THREAD SUBMISSION");
+  L.push("Contributor: " + (state.who||"—") + (state.handle ? "  " + state.handle : ""));
+  L.push("Posts: " + state.posts.length + "   Generated: " + new Date().toISOString().slice(0,10));
+  L.push("");
+  state.posts.forEach((p,i) => {
+    const used = graphemes(p.text), total = postedLength(p);
+    const links = (p.links||[]).filter(l => l.trim());
+    const kind = p.kind==="paper" ? "Paper post — " + p.cat : (KIND_LABEL[p.kind] || p.kind);
+    L.push("─".repeat(58));
+    L.push(`POST ${i}  [${kind}]  text ${used}/${TEXT_LIMIT}`
+      + (links.length ? `  ·  posts as ${total}/${POST_LIMIT}` : "")
+      + (used > TEXT_LIMIT || total > POST_LIMIT ? "  *** OVER ***" : ""));
+    L.push("");
+    L.push(p.text || "(empty)");
+    L.push("");
+    links.forEach(l => L.push("Link:  " + l.trim()));
+    L.push("Media: " + (p.media ? (p.media.rename||p.media.name)+" ("+p.media.size+")"
+                                : (i === 0 ? "MISSING — required" : "none")));
+    if (p.media && (p.media.alt||"").trim()) L.push("Alt:   " + p.media.alt.trim());
+    L.push("");
+  });
+  document.getElementById("out").value = L.join("\n");
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
+
+document.getElementById("who").addEventListener("input", e => { state.who = e.target.value; renderOut(); save(); });
+document.getElementById("handle").addEventListener("input", e => { state.handle = e.target.value; renderOut(); save(); });
+document.getElementById("add").addEventListener("click", () => {
+  state.posts.push({kind:"paper", cat:"research", text:"", links:[""], media:null}); render(); });
+document.getElementById("clear").addEventListener("click", () => {
+  if (confirm("Delete the whole draft?")){
+    localStorage.removeItem(KEY);
+    state = {who:"",handle:"",posts:[{kind:"intro",cat:"",text:"",links:[],media:null}]};
+    render();
+  }});
+document.getElementById("copy").addEventListener("click", async () => {
+  const b = document.getElementById("copy");
+  try{ await navigator.clipboard.writeText(document.getElementById("out").value);
+       b.textContent = "Copied"; setTimeout(()=>b.textContent="Copy submission", 1400); }
+  catch(e){ document.getElementById("out").select(); }
+});
+document.getElementById("dl").addEventListener("click", () => {
+  const blob = new Blob([document.getElementById("out").value], {type:"text/plain;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "epimechfc-thread-" + (state.who||"draft").replace(/\W+/g,"-").toLowerCase() + ".txt";
+  a.click();
+});
+
+render();
+</script>
+
+
+
+    </main>
+
+    <footer>
+      <!--
+      <p>Maintained by <a href="\about"> Nimesh Chahare and Julia Eckert </a> <br> Last-updated: October 23rd, 2025 </p>
+      -->
+      <p>Maintained by <a href="\about"> Nimesh Chahare and Julia Eckert </a></p>
+    </footer>
+
+  </body>
+</html>
