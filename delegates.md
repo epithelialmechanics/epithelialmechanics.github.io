@@ -39,6 +39,7 @@ images2:
   - {path: /assets/people/Lucia_Baldauf.png, name: "Lucia Baldauf", affiliation: "...", origin: "London, UK"}
   - {path: /assets/people/Lucien_Hinderling.png, name: "Lucien Hinderling", affiliation: "...", origin: "Bern, Switzerland"}
   - {path: /assets/people/Maik_Bischoff.png, name: "Maik Bischoff", affiliation: "...", origin: "Münster, Germany"}
+  - {path: /assets/people/Marija_Matejčić.png, name: "Marija Matejčić", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Mathieu_Dedenon.png, name: "Mathieu Dedenon", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Miquel_Bosch.png, name: "Miquel Bosch", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Neha_Ghosh.png, name: "Neha Ghosh", affiliation: "...", origin: "New York, USA"}
