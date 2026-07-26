@@ -4,7 +4,7 @@ title:  Delegates
 description: Thread contributing members of the Epithelial Mechanics Fan Club
 permalink: /delegates/
 images1:
-  - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "New York, USA"}
+  - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Barcelona, Spain"}
   - {path: /assets/people/Julia_Eckert.png, caption: "Chairperson", name: "Julia Eckert",  description: "Brisbane, Australia"}
 images2:
   - {path: /assets/people/Abdel_Rahman_Abdel_Fattah.png, name: "Abdel Rahman Abdel Fattah", affiliation: "...", origin: "Vienna, Austria"}
