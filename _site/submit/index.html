@@ -107,6 +107,7 @@
   .pill.ok { background: var(--okbg); color: var(--ok); }
   .pill.bad { background: var(--badbg); color: var(--bad); }
   .pill.info { background: var(--disabled); color: var(--text-light); }
+  .mbtns { display: inline-flex; gap: 0.4rem; }
   .altbox { margin-top: 0.6rem; }
   .altbox label { font-size: 0.85rem; color: var(--text-light); }
 
@@ -123,20 +124,31 @@
          border-bottom: 1px solid var(--border); }
   .chk:last-child { border-bottom: none; }
   .chk b { flex: none; width: 1rem; text-align: center; }
-  .chk.pass b { color: var(--ok); } .chk.fail b, .chk.fail { color: var(--bad); }
+  .chk.pass b { color: var(--ok); }
+  .chk.fail b, .chk.fail { color: var(--bad); }
+  .chk.pend, .chk.pend b { color: var(--text-light); }
 
   .out { font-family: var(--mono-font); font-size: 0.8rem; min-height: 16rem; }
+
+
+  .jump { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.8rem; }
+  .jump a { text-decoration: none; font-size: 0.8rem; font-variant-numeric: tabular-nums;
+            padding: 0.1rem 0.45rem; border: 1px solid var(--border);
+            border-radius: var(--standard-border-radius); color: var(--text-light); }
+  .jump a:hover { border-color: var(--accent); color: var(--accent); }
+  .jump a.bad { border-color: var(--bad); color: var(--bad); }
+  .jump a.empty { opacity: 0.55; }
 </style>
 
 <details>
   <summary>Thread rules</summary>
   <ul>
-    <li><b>Post 0 — introduction.</b> Introduce yourself. No paper needed. Must include an eye-catching image or movie.</li>
+    <li><b>Post 0 — introduction.</b> Introduce yourself. No paper needed. Must include an eye-catching image, GIF or movie.</li>
     <li><b>Paper posts.</b> Your story about the paper, plus the paper link. At least 4 research articles (preprints count) and 1 review.</li>
     <li><b>Context / commentary posts.</b> Background, history, a transition between papers, an open question. No paper needed — use as many as you like.</li>
     <li><b>Closing post(s).</b> Summary, personal opinion, open questions, or thanks. Link the labs mentioned, e.g. <code>@epimechfc.bsky.social</code>.</li>
     <li><b>Length: 275 characters including spaces</b> for your text. Paper links go in their own box and are not counted against it.</li>
-    <li><b>Media:</b> required for Post 0 only. Optional but very welcome on the rest. Images JPEG/PNG, max 1&nbsp;MB. Movies MOV/MP4. Name them <code>Post0</code>, <code>Post1</code>, … to match the post numbers.</li>
+    <li><b>Media:</b> required for Post 0 only. Optional but very welcome on the rest. Images JPEG, PNG or GIF, max 1&nbsp;MB. Movies MOV/MP4. Call your files whatever you like — the download renames them for you.</li>
   </ul>
   <p class="note">Your files are checked in your browser only — nothing is uploaded from this page.</p>
 </details>
@@ -158,12 +170,15 @@
     <h3>Submission</h3>
     <textarea class="out" id="out" readonly></textarea>
     <div class="actions">
-      <button id="copy">Copy submission</button>
-      <button class="sec" id="dl">Download .txt</button>
+      <button id="zip">Download everything (.zip)</button>
+      <button class="sec" id="copy">Copy submission</button>
+      <button class="sec" id="dl">Download .txt only</button>
     </div>
   </div>
 
   <aside>
+    <h3>Posts</h3>
+    <div class="jump" id="jump"></div>
     <h3>Checklist</h3>
     <div id="checks"></div>
     <p class="note">Drafts are saved in this browser automatically.</p>
@@ -216,24 +231,23 @@ let state = load() || {
 };
 
 function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state, (k,v) => (k === "preview" || k === "file") ? undefined : v)); }catch(e){} }
 
-const IMG_OK = ["image/jpeg","image/png"];
+const IMG_OK = ["image/jpeg","image/png","image/gif"];
 const VID_OK = ["video/quicktime","video/mp4"];
 const MB = 1024*1024;
 
 function checkFile(f, idx){
   const kb = f.size/1024;
   const size = kb < 1024 ? kb.toFixed(0)+" KB" : (kb/1024).toFixed(2)+" MB";
-  const r = {name:f.name, size, type:f.type, problems:[], preview:null, alt:""};
+  const r = {name:f.name, size, type:f.type, problems:[], preview:null, alt:"", file:f};
   const isImg = IMG_OK.includes(f.type);
   const isVid = VID_OK.includes(f.type) || /\.(mov|mp4)$/i.test(f.name);
-  if (!isImg && !isVid) r.problems.push("Format must be JPEG, PNG, MOV or MP4");
-  if (isImg && f.size > 1*MB)  r.problems.push("Image is over the 1 MB limit ("+size+")");
+  if (!isImg && !isVid) r.problems.push("Format must be JPEG, PNG, GIF, MOV or MP4");
+  if (isImg && f.size > 1*MB)  r.problems.push((f.type==="image/gif"?"GIF":"Image")+" is over the 1 MB limit ("+size+")");
   if (isVid && f.size > 50*MB) r.problems.push("Video is over Bluesky's 50 MB limit ("+size+")");
-  const want = "Post"+idx+(isImg ? (f.type==="image/png"?".png":".jpg")
-                                 : (/\.mov$/i.test(f.name)?".mov":".mp4"));
-  if (f.name.toLowerCase() !== want.toLowerCase()) r.rename = want;
+  r.ext = isImg ? (f.type==="image/png" ? ".png" : f.type==="image/gif" ? ".gif" : ".jpg")
+                : (/\.mov$/i.test(f.name) ? ".mov" : ".mp4");
   if (isImg) r.preview = URL.createObjectURL(f);
   return r;
 }
@@ -257,14 +271,18 @@ function render(){
 }
 
 function meterHtml(p){
-  const used = graphemes(p.text);
+  const used   = graphemes(p.text);
+  const total  = postedLength(p);
+  const links  = (p.links||[]).filter(l=>l.trim());
+  const nlinks = links.length;
+  const linkCost = total - used;
   const pct  = Math.min(100, used/TEXT_LIMIT*100);
-  const cls  = used > TEXT_LIMIT ? "bad" : used > TEXT_LIMIT*0.92 ? "near" : "ok";
-  const total = postedLength(p);
-  const nlinks = (p.links||[]).filter(l=>l.trim()).length;
+  const cls  = (used > TEXT_LIMIT || total > POST_LIMIT) ? "bad"
+             : used > TEXT_LIMIT*0.92 ? "near" : "ok";
 
   let extra = "";
-  if (nlinks) extra = `<span class="note">+ ${nlinks} link${nlinks>1?"s":""} &rarr; posts as ${total}/${POST_LIMIT}</span>`;
+  if (nlinks) extra = `<span class="note">+ ${nlinks} link${nlinks>1?"s":""} (${linkCost} chars) `
+    + `&rarr; posts as <b>${total}/${POST_LIMIT}</b></span>`;
 
   let alert = "";
   if (used > TEXT_LIMIT)
@@ -288,6 +306,7 @@ function postCard(p, i){
   const card = document.createElement("article");
   const bad = graphemes(p.text) > TEXT_LIMIT || postedLength(p) > POST_LIMIT;
   card.className = bad ? "over" : "";
+  card.id = "post" + i;
 
   card.innerHTML = `
     <div class="rowtop">
@@ -324,7 +343,12 @@ function postCard(p, i){
       <img class="thumb" style="${p.media&&p.media.preview?"":"display:none"}"
            src="${p.media&&p.media.preview?p.media.preview:""}" alt="">
       <div class="mstat" data-mstat></div>
-      <input type="file" data-k="file" accept="image/jpeg,image/png,video/mp4,video/quicktime">
+      <input type="file" data-k="file" accept="image/jpeg,image/png,image/gif,video/mp4,video/quicktime"
+             ${p.media ? 'style="display:none"' : ""}>
+      ${p.media ? `<span class="mbtns">
+        <button class="sec tiny" data-a="replace">Replace file</button>
+        <button class="sec tiny" data-a="dropmedia">Remove</button>
+      </span>` : ""}
     </div>
     ${p.media ? `<div class="altbox">
       <label for="alt${i}">Alt text (optional, but it makes your image readable to blind followers)</label>
@@ -355,7 +379,7 @@ function postCard(p, i){
   const ms = card.querySelector("[data-mstat]");
   if (!p.media){
     ms.innerHTML = i === 0
-      ? `<span class="pill bad">Required</span> <span class="note">Post 0 needs an eye-catching image or movie.</span>`
+      ? `<span class="pill bad">Required</span> <span class="note">Post 0 needs an eye-catching image, GIF or movie.</span>`
       : `<span class="pill info">Optional</span> <span class="note">An image related to this post is welcome but not required.</span>`;
   } else {
     const prob = p.media.problems.length > 0;
@@ -363,7 +387,9 @@ function postCard(p, i){
       `<span class="pill ${prob?"bad":"ok"}">${prob?"Problem":"OK"}</span>` +
       `<b>${escapeHtml(p.media.name)}</b> <span class="note">${p.media.size}</span>` +
       (prob ? `<div style="color:var(--bad);margin-top:0.25rem">${p.media.problems.map(escapeHtml).join("<br>")}</div>` : "") +
-      (p.media.rename ? `<div class="note" style="margin-top:0.25rem">Rename to <code>${p.media.rename}</code> before sending.</div>` : "");
+      (p.media.file
+        ? `<div class="note" style="margin-top:0.25rem">Saved in the zip as <code>${wantName(p.media, i)}</code> — no need to rename it yourself.</div>`
+        : `<div class="note" style="margin-top:0.25rem;color:var(--bad)">Pick this file again so it can go in the zip.</div>`);
   }
 
   card.querySelectorAll("[data-k]").forEach(el => {
@@ -391,6 +417,8 @@ function postCard(p, i){
 
   card.querySelectorAll("[data-a]").forEach(b => b.addEventListener("click", () => {
     const a = b.dataset.a;
+    if (a === "replace"){ card.querySelector('[data-k="file"]').click(); return; }
+    if (a === "dropmedia") state.posts[i].media = null;
     if (a === "addlink") state.posts[i].links.push("");
     if (a === "del" && state.posts.length > 1) state.posts.splice(i,1);
     if (a === "up"   && i > 0) state.posts.splice(i-1, 0, state.posts.splice(i,1)[0]);
@@ -401,39 +429,73 @@ function postCard(p, i){
   return card;
 }
 
+function wantName(p, i){ return p && p.ext ? "Post" + i + p.ext : ""; }
+function renameNeeded(p, i){
+  const w = wantName(p, i);
+  return (w && p.name && p.name.toLowerCase() !== w.toLowerCase()) ? w : "";
+}
+
 function refreshMeter(card, i){
   const p = state.posts[i];
   card.querySelector("[data-meter]").innerHTML = meterHtml(p);
   card.className = (graphemes(p.text) > TEXT_LIMIT || postedLength(p) > POST_LIMIT) ? "over" : "";
 }
 
+// Three states, so a blank form isn't a page of green ticks:
+//   pass = done   fail = actively wrong   pend = just not written yet
 function renderChecks(){
   const P = state.posts;
-  const research   = P.filter(p => p.kind==="paper" && (p.cat==="research"||p.cat==="preprint")).length;
-  const reviews    = P.filter(p => p.kind==="paper" && p.cat==="review").length;
-  const overText   = P.filter(p => graphemes(p.text) > TEXT_LIMIT).length;
-  const overPost   = P.filter(p => postedLength(p) > POST_LIMIT).length;
-  const empty      = P.filter(p => !p.text.trim()).length;
-  const noLink     = P.filter(p => p.kind==="paper" && !(p.links||[]).some(l=>l.trim())).length;
-  const intro      = P.filter(p => p.kind==="intro").length;
-  const firstMedia = !!(P[0] && P[0].media);
+  const filled  = p => p.text.trim().length > 0;
+  const written = P.filter(filled);
+  const any     = written.length > 0;
+
+  // only posts that actually have text count towards anything
+  const research   = P.filter(p => p.kind==="paper" && filled(p) && (p.cat==="research"||p.cat==="preprint")).length;
+  const reviews    = P.filter(p => p.kind==="paper" && filled(p) && p.cat==="review").length;
+  const overText   = written.filter(p => graphemes(p.text) > TEXT_LIMIT).length;
+  const overPost   = written.filter(p => postedLength(p) > POST_LIMIT).length;
+  const empty      = P.length - written.length;
+  const paperDone  = P.filter(p => p.kind==="paper" && filled(p)).length;
+  const noLink     = P.filter(p => p.kind==="paper" && filled(p) && !(p.links||[]).some(l=>l.trim())).length;
+  const intro      = P.filter(p => p.kind==="intro" && filled(p)).length;
+  const firstMedia = !!(P[0] && P[0].media && !P[0].media.problems.length);
   const withMedia  = P.filter(p => p.media).length;
   const badMedia   = P.filter(p => p.media && p.media.problems.length).length;
 
   const items = [
-    [intro===1,     `Exactly one introduction post ${intro!==1?`(you have ${intro})`:""}`],
-    [research>=4,   `At least 4 research articles or preprints (${research})`],
-    [reviews>=1,    `At least 1 review (${reviews})`],
-    [empty===0,     empty ? `${empty} post${empty>1?"s are":" is"} still empty` : "All posts written"],
-    [noLink===0,    noLink ? `${noLink} paper post${noLink>1?"s have":" has"} no link` : "Every paper post has a link"],
-    [overText===0,  overText ? `${overText} post${overText>1?"s exceed":" exceeds"} 275 characters` : "All text within 275"],
-    [overPost===0,  overPost ? `${overPost} post${overPost>1?"s won't":" won't"} fit once links are added` : "All posts fit on Bluesky"],
-    [firstMedia,    firstMedia ? "Post 0 has its image or movie" : "Post 0 still needs an image or movie"],
-    [badMedia===0,  badMedia ? `${badMedia} media file${badMedia>1?"s have":" has"} a format or size problem`
-                             : `All media files valid (${withMedia} attached)`]
+    [state.who.trim() ? "pass" : "pend",
+      state.who.trim() ? "Your name is filled in" : "Your name"],
+    [state.handle.trim() ? "pass" : "pend",
+      state.handle.trim() ? "Your Bluesky handle is filled in" : "Your Bluesky handle"],
+    [intro===1 ? "pass" : intro>1 ? "fail" : "pend",
+      intro>1 ? `You have ${intro} introduction posts — only one allowed` : "Introduction post written"],
+    [research>=4 ? "pass" : "pend", `Research articles or preprints written: ${research} of 4`],
+    [reviews>=1  ? "pass" : "pend", `Reviews written: ${reviews} of 1`],
+    [empty===0 ? "pass" : "pend",
+      empty ? `${empty} post${empty>1?"s":""} still empty — write or delete` : "All posts written"],
+    [!paperDone ? "pend" : noLink ? "pend" : "pass",
+      noLink ? `${noLink} paper post${noLink>1?"s":""} still needs a link` : "Every paper post has a link"],
+    [!any ? "pend" : overText ? "fail" : "pass",
+      overText ? `${overText} post${overText>1?"s exceed":" exceeds"} 275 characters` : "All text within 275"],
+    [!any ? "pend" : overPost ? "fail" : "pass",
+      overPost ? `${overPost} post${overPost>1?"s won't":" won't"} fit once links are added` : "All posts fit on Bluesky"],
+    [firstMedia ? "pass" : "pend",
+      firstMedia ? "Post 0 has its media" : "Post 0 needs an image, GIF or movie"],
+    [!withMedia ? "pend" : badMedia ? "fail" : "pass",
+      badMedia ? `${badMedia} media file${badMedia>1?"s have":" has"} a format or size problem`
+               : withMedia ? `All ${withMedia} media file${withMedia>1?"s":""} valid` : "Media files"]
   ];
-  document.getElementById("checks").innerHTML = items.map(([ok,txt]) =>
-    `<div class="chk ${ok?"pass":"fail"}"><b>${ok?"✓":"✕"}</b><span>${txt}</span></div>`).join("");
+  const MARK = {pass:"✓", fail:"✕", pend:"–"};
+  document.getElementById("checks").innerHTML = items.map(([st,txt]) =>
+    `<div class="chk ${st}"><b>${MARK[st]}</b><span>${txt}</span></div>`).join("");
+
+  document.getElementById("jump").innerHTML = P.map((p,i) => {
+    const over  = graphemes(p.text) > TEXT_LIMIT || postedLength(p) > POST_LIMIT;
+    const empty = !p.text.trim();
+    const label = KIND_LABEL[p.kind] || p.kind;
+    return `<a href="#post${i}" class="${over?"bad":empty?"empty":""}"
+      title="${escapeHtml(label)}${over?" — over the limit":empty?" — empty":""}">${i}</a>`;
+  }).join("");
 }
 
 function renderOut(){
@@ -454,7 +516,7 @@ function renderOut(){
     L.push(p.text || "(empty)");
     L.push("");
     links.forEach(l => L.push("Link:  " + l.trim()));
-    L.push("Media: " + (p.media ? (p.media.rename||p.media.name)+" ("+p.media.size+")"
+    L.push("Media: " + (p.media ? (wantName(p.media, i)||p.media.name)+" ("+p.media.size+")"
                                 : (i === 0 ? "MISSING — required" : "none")));
     if (p.media && (p.media.alt||"").trim()) L.push("Alt:   " + p.media.alt.trim());
     L.push("");
@@ -465,8 +527,10 @@ function renderOut(){
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c =>
   ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
 
-document.getElementById("who").addEventListener("input", e => { state.who = e.target.value; renderOut(); save(); });
-document.getElementById("handle").addEventListener("input", e => { state.handle = e.target.value; renderOut(); save(); });
+document.getElementById("who").addEventListener("input", e => {
+  state.who = e.target.value; renderChecks(); renderOut(); save(); });
+document.getElementById("handle").addEventListener("input", e => {
+  state.handle = e.target.value; renderChecks(); renderOut(); save(); });
 document.getElementById("add").addEventListener("click", () => {
   state.posts.push({kind:"paper", cat:"research", text:"", links:[""], media:null}); render(); });
 document.getElementById("clear").addEventListener("click", () => {
@@ -481,6 +545,90 @@ document.getElementById("copy").addEventListener("click", async () => {
        b.textContent = "Copied"; setTimeout(()=>b.textContent="Copy submission", 1400); }
   catch(e){ document.getElementById("out").select(); }
 });
+/* ---------- minimal ZIP writer (store, no compression, no library) ---------- */
+const CRC_TABLE = (() => {
+  const t = new Uint32Array(256);
+  for (let i = 0; i < 256; i++){
+    let c = i;
+    for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+    t[i] = c >>> 0;
+  }
+  return t;
+})();
+function crc32(u8){
+  let c = 0xFFFFFFFF;
+  for (let i = 0; i < u8.length; i++) c = CRC_TABLE[(c ^ u8[i]) & 0xFF] ^ (c >>> 8);
+  return (c ^ 0xFFFFFFFF) >>> 0;
+}
+function zipStore(entries){
+  const enc = new TextEncoder(), parts = [], central = [];
+  const d = new Date();
+  const dosTime = (d.getHours()<<11) | (d.getMinutes()<<5) | (d.getSeconds()>>1);
+  const dosDate = ((d.getFullYear()-1980)<<9) | ((d.getMonth()+1)<<5) | d.getDate();
+  let offset = 0;
+  for (const e of entries){
+    const nb = enc.encode(e.name), crc = crc32(e.data), len = e.data.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true);
+    lh.setUint16(6, 0x0800, true);     lh.setUint16(8, 0, true);
+    lh.setUint16(10, dosTime, true);   lh.setUint16(12, dosDate, true);
+    lh.setUint32(14, crc, true);       lh.setUint32(18, len, true);
+    lh.setUint32(22, len, true);       lh.setUint16(26, nb.length, true);
+    parts.push(new Uint8Array(lh.buffer), nb, e.data);
+    const cd = new DataView(new ArrayBuffer(46));
+    cd.setUint32(0, 0x02014b50, true); cd.setUint16(4, 20, true);
+    cd.setUint16(6, 20, true);         cd.setUint16(8, 0x0800, true);
+    cd.setUint16(10, 0, true);         cd.setUint16(12, dosTime, true);
+    cd.setUint16(14, dosDate, true);   cd.setUint32(16, crc, true);
+    cd.setUint32(20, len, true);       cd.setUint32(24, len, true);
+    cd.setUint16(28, nb.length, true); cd.setUint32(42, offset, true);
+    central.push(new Uint8Array(cd.buffer), nb);
+    offset += 30 + nb.length + len;
+  }
+  let cdSize = 0; for (const c of central) cdSize += c.length;
+  const eo = new DataView(new ArrayBuffer(22));
+  eo.setUint32(0, 0x06054b50, true);   eo.setUint16(8, entries.length, true);
+  eo.setUint16(10, entries.length, true);
+  eo.setUint32(12, cdSize, true);      eo.setUint32(16, offset, true);
+  return new Blob([...parts, ...central, new Uint8Array(eo.buffer)], {type:"application/zip"});
+}
+
+function baseName(){
+  return "epimechfc-thread-" + (state.who || "draft").replace(/\W+/g,"-").toLowerCase();
+}
+
+document.getElementById("zip").addEventListener("click", async e => {
+  const btn = e.target;
+  const missing = state.posts
+    .map((p,i) => (p.media && !p.media.file) ? i : -1).filter(i => i >= 0);
+  if (missing.length){
+    alert("Post " + missing.join(", ") + " lost its file when the page reloaded.\n\n"
+        + "Pick those files again, then download the zip.");
+    return;
+  }
+  btn.disabled = true; btn.textContent = "Packing…";
+  try{
+    const enc = new TextEncoder();
+    const entries = [{name: baseName() + ".txt",
+                      data: enc.encode(document.getElementById("out").value)}];
+    for (let i = 0; i < state.posts.length; i++){
+      const m = state.posts[i].media;
+      if (!m || !m.file) continue;
+      entries.push({name: wantName(m, i) || m.name,
+                    data: new Uint8Array(await m.file.arrayBuffer())});
+    }
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(zipStore(entries));
+    a.download = baseName() + ".zip";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    btn.textContent = `Downloaded ${entries.length} files`;
+  }catch(err){
+    btn.textContent = "Couldn't build the zip";
+  }
+  setTimeout(() => { btn.disabled = false; btn.textContent = "Download everything (.zip)"; }, 2500);
+});
+
 document.getElementById("dl").addEventListener("click", () => {
   const blob = new Blob([document.getElementById("out").value], {type:"text/plain;charset=utf-8"});
   const a = document.createElement("a");

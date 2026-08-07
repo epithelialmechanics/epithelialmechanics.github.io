@@ -107,18 +107,21 @@ function shortUrl(u){
 }
 
 function extractDoi(raw){
-  const line = raw.trim();
+  let line = raw.trim();
   if (!line) return null;
-  let m = line.match(/10\.\d{4,9}\/[^\s"'<>]+/);
+  line = line.replace(/[#?].*$/, "");            // drop #anchor and ?query BEFORE any other cleanup
+  let m = line.match(/10\.\d{4,9}\/[^\s"']+/);   // < and > allowed, for old Wiley SICI DOIs
   if (m){
-    return m[0]
+    let d = m[0];
+    if (!d.includes("<")) d = d.replace(/>+$/, "");
+    return d
       .replace(/[).,;]+$/,"")
-      .replace(/v\d+(\.full)?(\.pdf)?$/i,"")
-      .replace(/\.full(-text)?$/i,"")
-      .replace(/\?.*$/,"");
+      .replace(/v\d+(\.full)?(\.pdf)?(\+html)?$/i,"")
+      .replace(/\.(full(-text)?|supplementary-material|abstract|article-info|article-metrics)$/i,"")
+      .replace(/\/+$/,"");
   }
   m = line.match(/nature\.com\/articles\/([a-z0-9.\-]+)/i);
-  if (m) return "10.1038/" + m[1].replace(/\?.*$/,"");
+  if (m) return "10.1038/" + m[1].replace(/\.pdf$/i,"");
   m = line.match(/rupress\.org\/(jcb|jem|jgp)\/[^?]*?\/e(\d{9})/i);
   if (m) return "10.1083/" + m[1].toLowerCase() + "." + m[2];
   return null;
@@ -155,7 +158,13 @@ function authorList(authors, keep){
   }
   return names.slice(0,-1).join(", ") + ", & " + names[names.length-1];
 }
-function stripTags(s){ return String(s||"").replace(/<[^>]*>/g,"").replace(/\s+/g," ").trim(); }
+function stripTags(s){
+  let t = String(s||"").replace(/<[^>]*>/g,"");
+  if (typeof document !== "undefined"){
+    const d = document.createElement("textarea"); d.innerHTML = t; t = d.value;
+  }
+  return t.replace(/\s+/g," ").trim();
+}
 
 function buildCitation(w, keep){
   const authors = authorList(w.author || [], keep);
@@ -224,16 +233,19 @@ function tagFor(r){
 function postFor(r){
   const limit = +document.getElementById("limit").value || 300;
   const tag = tagFor(r);
-  const nAuthors = (r.work.author || []).length;
-  let keep = 0, text = "", cost = 0;
-  for (let k = nAuthors; k >= 1; k--){
-    const cite = buildCitation(r.work, k >= nAuthors ? 0 : k);
+  const all = r.work.author || [];
+  const nAuthors = all.length;
+  const full = authorList(all, 0);
+  let text = "", cost = 0, shown = full;
+  for (let k = Math.max(nAuthors, 1); k >= 1; k--){
+    const names = (k >= nAuthors) ? full : authorList(all, k);
+    const cite  = buildCitation(r.work, k >= nAuthors ? 0 : k);
     text = cite + " " + r.url + " " + tag;
     cost = graphemes(cite) + 1 + graphemes(shortUrl(r.url)) + 1 + graphemes(tag);
-    keep = k;
+    shown = names;
     if (cost <= limit) break;
   }
-  return {text, cost, trimmed: keep < nAuthors, limit};
+  return {text, cost, trimmed: shown !== full, limit};
 }
 
 function render(){

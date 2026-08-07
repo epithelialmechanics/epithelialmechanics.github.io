@@ -170,27 +170,41 @@ function shortUrl(u){
 let posts = [];
 
 function parse(raw){
-  const text = raw.replace(/\r\n/g,"\n");
-  const blocks = text.split(/^─{5,}\s*$/m).slice(1);
+  const text  = raw.replace(/\r\n/g,"\n");
+  const lines = text.split("\n");
+  const HEAD  = /^POST\s+(\d+)\s*\[([^\]]*)\]/i;   // the bracket is required, so prose can't match
+  const RULE  = /^[\u2500\u2014-]{5,}\s*$/;
+  const META  = /^(Link|Media|Alt):\s*(.*)$/i;
+
+  const starts = [];
+  lines.forEach((l,i) => { if (HEAD.test(l.trim())) starts.push(i); });
+
   const out = [];
-  for (const b of blocks){
-    const lines = b.split("\n");
-    let head = "", body = [], links = [], media = "", alt = "";
-    for (const rawline of lines){
-      const l = rawline.trimEnd();
-      if (/^POST\s+\d+/i.test(l) && !head){ head = l; continue; }
-      const mLink  = l.match(/^Link:\s*(.+)$/i);
-      const mMedia = l.match(/^Media:\s*(.+)$/i);
-      const mAlt   = l.match(/^Alt:\s*(.+)$/i);
-      if (mLink){ links.push(mLink[1].trim()); continue; }
-      if (mMedia){ media = mMedia[1].trim(); continue; }
-      if (mAlt){ alt = mAlt[1].trim(); continue; }
-      body.push(l);
+  for (let s = 0; s < starts.length; s++){
+    const from = starts[s];
+    const to   = (s + 1 < starts.length) ? starts[s+1] : lines.length;
+    const m    = lines[from].trim().match(HEAD);
+
+    let block = lines.slice(from + 1, to).map(l => l.replace(/[ \t]+$/,""));
+    while (block.length && RULE.test(block[block.length-1].trim())) block.pop();
+
+    // Metadata is the unbroken run of Link/Media/Alt lines at the very end, after the
+    // blank line that follows the body. Stopping at that blank means a body line which
+    // merely starts "Link:" stays body text.
+    while (block.length && !block[block.length-1].trim()) block.pop();
+    const links = []; const meta = {};
+    while (block.length){
+      const mm = block[block.length-1].match(META);
+      if (!mm) break;
+      const k = mm[1].toLowerCase(), v = mm[2].trim();
+      if (k === "link") links.unshift(v); else meta[k] = v;
+      block.pop();
     }
-    if (!head) continue;
-    const num  = (head.match(/^POST\s+(\d+)/i)||[])[1] ?? out.length;
-    const kind = (head.match(/\[([^\]]+)\]/)||[])[1] || "";
-    out.push({num, kind, body: body.join("\n").replace(/\n{3,}/g,"\n\n").trim(), links, media, alt, done:false});
+
+    let body = block.join("\n").replace(/^\n+/,"").replace(/\n+$/,"");
+    if (body.trim() === "(empty)") body = "";
+    out.push({num:m[1], kind:m[2].trim(), body, links,
+              media: meta.media || "", alt: meta.alt || "", done:false});
   }
   return out;
 }
@@ -279,9 +293,15 @@ function loadFrom(text, label){
     msg.textContent = "Couldn't find any posts in " + (label ? label : "that text") + ".";
     render(); return;
   }
-  const over = posts.filter(p => counted(p) > 300).length;
-  msg.textContent = (label ? label + ": " : "") + `loaded ${posts.length} posts`
-    + (over ? ` — ${over} over the limit` : "");
+  const stated = (text.match(/^Posts:\s*(\d+)/mi)||[])[1];
+  const over   = posts.filter(p => counted(p) > 300).length;
+  const nums   = posts.map(p => p.num);
+  const dupes  = nums.length !== new Set(nums).size;
+  let note = (label ? label + ": " : "") + `loaded ${posts.length} posts`;
+  if (stated && +stated !== posts.length) note += ` — the file says ${stated}, check for a damaged post`;
+  if (dupes) note += " — duplicate post numbers";
+  if (over)  note += ` — ${over} over the limit`;
+  msg.textContent = note;
   render();
 }
 
