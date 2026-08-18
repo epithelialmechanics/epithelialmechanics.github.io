@@ -1,13 +1,19 @@
+---
+layout: default
+title: Thread tools
+description: Internal guide to the submit, helper, and cite pages.
+---
+
 # Thread tools
 
 Three pages that turn a contributor's draft into posted content. All static, all run
 entirely in the browser — nothing is uploaded and no login is needed.
 
-| Page | URL | Who uses it |
-|---|---|---|
-| `submit/` | `/submit/` | **Contributors** — write and check a thread |
-| `helper/` | `/helper/` | **Admin** — post the thread |
-| `cite/` | `/cite/` | **Admin** — make the daily paper posts |
+| Page | Who uses it |
+|---|---|
+| [`/submit/`](/submit/) | **Contributors** — write and check a thread |
+| [`/helper/`](/helper/) | **Admin** — post the thread |
+| [`/cite/`](/cite/) | **Admin** — make the daily paper posts |
 
 Only `/submit/` goes in the email to contributors. The other two are unlisted —
 not in the site nav, reachable by direct URL.
@@ -92,7 +98,7 @@ culprit — they use internal IDs with no DOI in the URL.
 ## Notes
 
 - Each page is a single file with no dependencies or build step. Edit and commit.
-- The scripts are wrapped in `{% raw %}` so Jekyll's Liquid leaves them alone.
+- The scripts are wrapped in a Liquid `raw` tag so Jekyll leaves them alone.
   Keep that wrapper if you edit the JavaScript.
 - Page titles and descriptions come from the front matter and are rendered by
   `_layouts/default.html`, so the pages inherit the site nav, fonts and dark mode.
