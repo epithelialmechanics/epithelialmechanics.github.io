@@ -154,7 +154,7 @@ function authorList(authors, keep){
   if (names.length === 1) return names[0];
   const last2 = names.slice(-2);
   if (keep && names.length > keep + 2){
-    return names.slice(0, keep).join(", ") + ", ... " + last2[0] + ", & " + last2[1];
+    return names.slice(0, keep).join(", ") + ", ..., " + last2[0] + ", & " + last2[1];
   }
   return names.slice(0,-1).join(", ") + ", & " + names[names.length-1];
 }
