@@ -240,7 +240,7 @@ function postFor(r){
   for (let k = Math.max(nAuthors, 1); k >= 1; k--){
     const names = (k >= nAuthors) ? full : authorList(all, k);
     const cite  = buildCitation(r.work, k >= nAuthors ? 0 : k);
-    text = cite + " " + r.url + " " + tag;
+    text = cite + " " + tag + "\n" + r.url;
     cost = graphemes(cite) + 1 + graphemes(shortUrl(r.url)) + 1 + graphemes(tag);
     shown = names;
     if (cost <= limit) break;
