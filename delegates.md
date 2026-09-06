@@ -50,7 +50,8 @@ images2:
   - {path: /assets/people/Sayuki_Hirano.png, name: "Sayuki Hirano", affiliation: "...", origin: "Kyoto, Japan"}
   - {path: /assets/people/Tom_Golde.png, name: "Tom Golde", affiliation: "...", origin: "Barcelona, Spain"}
   - {path: /assets/people/Valeria_Venturini.png, name: "Valeria Venturini", affiliation: "...", origin: "Barcelona, Spain"}
-  - {path: /assets/people/Vina_Putra.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}    
+  - {path: /assets/people/Vina_Putra.png, name: "Vina Putra", affiliation: "...", origin: "Sydney, Australia"}
+  - {path: /assets/people/Vitor_Yang.png, name: "Vítor Yang", affiliation: "...", origin: "Porto, Portugal"}
   - {path: /assets/people/Weiyi_Qian.png, name: "Weiyi Qian", affiliation: "...", origin: "New York, USA"}
   - {path: /assets/people/Yamini_Ravichandran.png, name: "Yamini Ravichandran", affiliation: "...", origin: "Geneva, Switzerland"}
   - {path: /assets/people/Zoya_Mann.png, name: "Zoya Mann", affiliation: "...", origin: "Brisbane, Australia"}
