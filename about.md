@@ -15,12 +15,14 @@ Nimesh Chahare started the Twitter account on July 23, 2023, and shortly thereaf
 
 Do not miss our <a href="https://focalplane.biologists.com/2025/12/04/epithelial-mechanics-fan-club/">FocalPlane</a> blog post on how the club started a little over 2 years ago and how it has developed since then. <br><br><br>
 
-The Epithelial Mechanics Fan Club is currently managed by:<br><br>
+The Epithelial Mechanics Fan Club is currently managed by:<br>
+</div>
 
-<li> Dr. <a href="https://bsky.app/profile/onenimesa.bsky.social">Nimesh Chahare</a> is a postdoctoral fellow at EMBL Barcelona. His research focuses on the intersection of mechanical engineering and developmental biology, specifically exploring the self organization in neural tube organoids. </li><br>
+<ul class="Manager">
+<li> Dr. <a href="https://bsky.app/profile/onenimesa.bsky.social">Nimesh Chahare</a> is a postdoctoral fellow at EMBL Barcelona. His research focuses on the intersection of mechanical engineering and developmental biology, specifically exploring the self organization in neural tube organoids. </li>
   
 <li> Dr. <a href="https://julia-eckert.github.io">Julia Eckert</a> is a DFG Walter Benjamin Fellow, hosted in Alpha Yap's Lab at The University of Queensland, Australia. She is an experimental biophysicist and enthusiastic image analyst dedicated to investigating the mechanisms of morphogenesis using concepts from soft matter physics.</li>
-</div>
+</ul>
 
 
 <!--
@@ -47,5 +49,17 @@ div {
 div a {
   display: block; 
   display: inline-block; 
+}
+
+ul.Manager {
+  list-style-type: disc; 
+  margin: 2rem 0 0 0;    
+  padding-left: 3.5rem; 
+}
+
+ul.Manager li {
+  display: list-item;    
+  margin-bottom: 2rem;   
+  text-align: justify;   
 }
 </style>
