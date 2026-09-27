@@ -147,6 +147,18 @@ images:
     .gallery-item:hover img {
       transform: scale(1.1);
     }
+
+    .image-caption {
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #666; 
+    }
+
+    .image-description {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    
   }
 </style>
 
