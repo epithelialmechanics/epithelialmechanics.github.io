@@ -62,7 +62,6 @@ images3:
 
 
 
-<style>
 <div class="gallery1">
   {% for image in page.images1 %}
     <div class="gallery-item">
@@ -111,6 +110,7 @@ images3:
   </a>
 </div>
 
+<style>
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
