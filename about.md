@@ -69,7 +69,7 @@ ul.Manager li {
   }
 
   ul.Manager {
-    padding-left: 3.5rem; 
+    padding-left: 2rem; 
   }
 
   ul.Manager li {
