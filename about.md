@@ -54,7 +54,7 @@ div a {
 ul.Manager {
   list-style-type: disc; 
   margin: 2rem 0 0 0;    
-  padding-left: 3.5rem; 
+  padding-left: 2rem; 
 }
 
 ul.Manager li {
@@ -62,4 +62,19 @@ ul.Manager li {
   margin-bottom: 2rem;   
   text-align: justify;   
 }
+
+@media (min-width: 600px) {
+  div {
+    text-align: justify;  
+  }
+
+  ul.Manager {
+    padding-left: 3.5rem; 
+  }
+
+  ul.Manager li {
+    text-align: justify; 
+    margin-bottom: 2rem;
+  }
+}  
 </style>
