@@ -40,5 +40,6 @@ div {
 }
 div a {
   display: block; 
+  display: inline-block; 
 }
 </style>
