@@ -54,7 +54,7 @@ div a {
 ul.Manager {
   list-style-type: disc; 
   margin: 2rem 0 0 0;    
-  padding-left: 2rem; 
+  padding-left: 3.5rem; 
 }
 
 ul.Manager li {
@@ -69,7 +69,7 @@ ul.Manager li {
   }
 
   ul.Manager {
-    padding-left: 2rem; 
+    padding-left: 3.5rem; 
   }
 
   ul.Manager li {
