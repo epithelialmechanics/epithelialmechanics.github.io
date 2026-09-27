@@ -131,7 +131,7 @@ images3:
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 0;  
     margin-bottom: 8px;
   }
   
