@@ -160,7 +160,7 @@ images3:
     .gallery-item img {
       max-width: 100%; 
       aspect-ratio: 1/1;
-      border-radius: 8px; 
+      border-radius: 5px; 
       transition: transform 0.5s ease-in-out;
     }
 
