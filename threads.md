@@ -71,6 +71,21 @@ images:
 ---
 
 
+<div class="gallery">
+  {% for image in page.images %}
+    <div class="gallery-item">
+      <a href="{{ site.baseurl }}{{ image.bluesky }}">
+        <img src="{{ site.baseurl }}{{ image.path }}"/>
+      </a>
+      <div class="image-caption"><a href="{{ site.baseurl }}{{ image.bluesky }}">{{ image.caption }}</a></div>
+      <div class="image-description">{{ image.description | newline_to_br }}</div>
+      <div class="image-description">({{ image.date }}) </div>
+      <!--
+      <div class="image-description"> <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a> ({{ image.date }}) </div>
+      -->
+    </div>
+  {% endfor %}
+</div>
 
 
 <style>
@@ -137,22 +152,6 @@ images:
 
 
 <!--
-<div class="gallery">
-  {% for image in page.images %}
-    <div class="gallery-item">
-      <a href="{{ site.baseurl }}{{ image.bluesky }}">
-        <img src="{{ site.baseurl }}{{ image.path }}"/>
-      </a>
-      <div class="image-caption"><a href="{{ site.baseurl }}{{ image.bluesky }}">{{ image.caption }}</a></div>
-      <div class="image-description">{{ image.description | newline_to_br }}</div>
-      <div class="image-description">({{ image.date }}) </div>
-      <!--
-      <div class="image-description"> <a href="{{ site.baseurl }}{{ image.bluesky }}">Bluesky</a> ({{ image.date }}) </div>
-      
-    </div>
-  {% endfor %}
-</div>
-
 <style>
   .gallery {
     display: grid;
