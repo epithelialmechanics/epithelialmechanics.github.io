@@ -95,7 +95,6 @@ images:
     gap: 15px; 
     max-width: 95%; 
     margin: 0 auto;
-    margin-top: 20px;
   }
   
   .gallery-item {
@@ -129,6 +128,7 @@ images:
     .gallery {
       grid-template-columns: repeat(4, 1fr); 
       max-width: 100%;
+      margin-top: 20px;
     }
 
     .gallery-item {
