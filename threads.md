@@ -94,9 +94,9 @@ images:
 <style>
   .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   
