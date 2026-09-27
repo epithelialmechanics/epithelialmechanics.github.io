@@ -135,6 +135,7 @@ images:
       overflow: hidden;
       border-bottom: none;
       padding: 0;
+      margin-top: 20px;
     }
 
     .gallery-item img {
