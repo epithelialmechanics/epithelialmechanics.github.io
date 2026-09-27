@@ -116,13 +116,13 @@ images:
   .image-caption {
     margin-top: 10px;
     font-size: 0.9em;
-    color: #666;
-    margin-bottom: 20px; 
+    color: #666; 
   }
 
   .image-description {
     font-size: 1.1rem;
     line-height: 1.4;
+    margin-bottom: 20px;
   }
 
   @media (min-width: 768px) {
