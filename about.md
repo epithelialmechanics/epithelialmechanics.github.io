@@ -36,7 +36,9 @@ The Epithelial Mechanics Fan Club is currently managed by:
 <style>
 div {
   width: 100%;
-  display: flex;
   text-align: justify;
+}
+div a {
+  display: block; 
 }
 </style>
