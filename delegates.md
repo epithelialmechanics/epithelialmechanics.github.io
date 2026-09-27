@@ -162,6 +162,7 @@ images3:
       aspect-ratio: 1/1;
       border-radius: 5px; 
       transition: transform 0.5s ease-in-out;
+      margin-top: 20px;
     }
 
     .gallery-item:hover img {
