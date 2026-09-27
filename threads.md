@@ -114,7 +114,7 @@ images:
   }
   
   .image-caption {
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 0.9em;
     color: #666; 
   }
@@ -128,7 +128,6 @@ images:
     .gallery {
       grid-template-columns: repeat(4, 1fr); 
       max-width: 100%;
-      margin-top: 20px;
     }
 
     .gallery-item {
