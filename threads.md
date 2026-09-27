@@ -117,6 +117,7 @@ images:
     margin-top: 10px;
     font-size: 0.9em;
     color: #666;
+    margin-bottom: 20px; 
   }
 
   .image-description {
