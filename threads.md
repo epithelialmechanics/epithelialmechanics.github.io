@@ -95,6 +95,7 @@ images:
     gap: 15px; 
     max-width: 95%; 
     margin: 0 auto;
+    margin-top: 20px;
   }
   
   .gallery-item {
@@ -122,7 +123,6 @@ images:
   .image-description {
     font-size: 1.1rem;
     line-height: 1.4;
-    margin-bottom: 20px;
   }
 
   @media (min-width: 768px) {
