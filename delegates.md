@@ -100,12 +100,18 @@ images3:
   {% endfor %}
 </div>
 
-<br>
 <div style="text-align: center;">
   <a href="{{ site.baseurl }}/assets/people/000_Blank_world_map_Equal_Earth_projection.svg">  
             <img src="{{ site.baseurl }} /assets/people/000_Blank_world_map_Equal_Earth_projection.svg"/>
   </a>
 </div>
+
+
+
+
+
+
+
 
 <style>
   .gallery1, .gallery2 {
@@ -114,6 +120,7 @@ images3:
     gap: 15px;
     max-width: 95%; 
     margin: 0 auto;
+    margin-bottom: 15px; 
   }
   
   .gallery-item {
