@@ -117,7 +117,6 @@ images3:
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    /*gap: 15px;*/
     max-width: 95%; 
     margin: 0 auto;
   }
@@ -147,12 +146,14 @@ images3:
   @media (min-width: 768px) {
     .gallery1 {
       grid-template-columns: repeat(2, 1fr); 
+      gap: 15px;
       max-width: 80%;
       margin-bottom: 50px; 
     }
 
     .gallery2 {
       grid-template-columns: repeat(4, 1fr); 
+      gap: 15px;
       max-width: 100%;
       margin-bottom: 50px; 
     }
