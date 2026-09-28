@@ -114,14 +114,14 @@ images3:
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    gap: 15px; 
+    /* gap: 15px; */
     max-width: 95%; 
     margin: 0 auto;
   }
   
   .gallery-item {
     text-align: center;
-    /*padding: 10px 0; */
+    padding: 10px 0; 
     border-bottom: 1px solid var(--border, #eee); 
   }
 
