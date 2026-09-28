@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Threads
+description: Discover our mini-review threads across various research fields.
 permalink: /threads/
 images: 
   - {path: /assets/threads/20260927.png, caption: "About theory of biological patterns ", description: "by Benjamin Swedlund", date: "27/09/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mwiox4j4kj2k}
