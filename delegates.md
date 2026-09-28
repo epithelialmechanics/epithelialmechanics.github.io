@@ -114,7 +114,7 @@ images3:
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    /* gap: 15px; */ 
+    gap: 15px; 
     max-width: 95%; 
     margin: 0 auto;
   }
@@ -132,7 +132,7 @@ images3:
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;  
-    margin-bottom: 8px;
+   /* margin-bottom: 8px; */
   }
   
   .image-description {
