@@ -92,7 +92,6 @@ images:
   .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    gap: 15px; 
     max-width: 95%; 
     margin: 0 auto;
   }
@@ -114,7 +113,7 @@ images:
   }
   
   .image-caption {
-    margin-top: 8px;
+  /*  margin-top: 8px; */
     font-size: 0.9em;
     color: #666; 
   }
@@ -128,13 +127,14 @@ images:
     .gallery {
       grid-template-columns: repeat(4, 1fr); 
       max-width: 100%;
+      gap: 15px; 
     }
 
     .gallery-item {
       overflow: hidden;
       border-bottom: none;
       padding: 0;
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .gallery-item img {
