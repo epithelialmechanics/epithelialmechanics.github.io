@@ -116,7 +116,6 @@ images:
   }
   
   .image-caption {
-  /*  margin-top: 8px; */
     font-size: 0.9em;
     color: #666; 
   }
@@ -143,7 +142,7 @@ images:
     .gallery-item img {
       max-width: 100%; 
       aspect-ratio: 1/1;
-      border-radius: 50%; 
+      border-radius: 50%; /* squared: change to 5px */
       transition: transform 0.5s ease-in-out;
     }
 
@@ -152,7 +151,6 @@ images:
     }
 
     .image-caption {
-   /*   margin-top: 5px; */
       font-size: 0.9em;
       color: #666; 
     }
