@@ -102,6 +102,7 @@ images:
     text-align: center;
     padding: 10px 0;
     border-bottom: 1px solid var(--border, #eee); 
+    margin-bottom: 5px;
   }
 
   .gallery-item img {
@@ -111,7 +112,7 @@ images:
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
   
   .image-caption {
