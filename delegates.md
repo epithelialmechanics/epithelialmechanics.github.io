@@ -92,7 +92,7 @@ images3:
   <br>
 </div>
 
-<br>
+/*<br>*/
 <div class="gallery2">
   {% for image in page.images3 %}
     <div class="gallery-item">
@@ -114,7 +114,7 @@ images3:
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    /* gap: 15px; */
+    gap: 15px;
     max-width: 95%; 
     margin: 0 auto;
   }
