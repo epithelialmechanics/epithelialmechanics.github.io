@@ -160,8 +160,9 @@ images3:
 
     .gallery-item {
       overflow: hidden;
-      border-bottom: none; /* Entfernt die Trennlinie auf dem Desktop */
+      border-bottom: none; 
       padding: 0;
+      margin-bottom: 20px;
     }
 
     .gallery-item img {
@@ -169,7 +170,7 @@ images3:
       aspect-ratio: 1/1;
       border-radius: 5px; 
       transition: transform 0.5s ease-in-out;
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
 
     .gallery-item:hover img {
