@@ -120,7 +120,7 @@ images3:
     gap: 15px;
     max-width: 95%; 
     margin: 0 auto;
-    margin-bottom: 15px; 
+    margin-bottom: 50px; 
   }
   
   .gallery-item {
