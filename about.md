@@ -50,7 +50,7 @@ Do not miss our [FocalPlane](https://focalplane.biologists.com/2025/12/04/epithe
 
 The Epithelial Mechanics Fan Club is currently managed by:
 
-- Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social) is a postdoctoral fellow at EMBL Barcelona. His research focuses on the intersection of mechanical engineering and developmental biology, specifically exploring the self organization in neural tube organoids. 
+- Dr. [Nimesh Chahare](https://bsky.app/profile/onenimesa.bsky.social) is a postdoctoral fellow at EMBL Barcelona. His research focuses on the intersection of mechanical engineering and developmental biology, specifically exploring the self-organization in neural tube organoids. 
   
 - Dr. [Julia Eckert](https://julia-eckert.github.io) is a DFG Walter Benjamin Fellow at The University of Queensland, Australia. She is an experimental biophysicist and enthusiastic image analyst dedicated to investigating the mechanisms of morphogenesis using concepts from soft matter physics.
 -->
