@@ -123,6 +123,7 @@ images3:
     text-align: center;
     padding: 10px 0; 
     border-bottom: 1px solid var(--border, #eee); 
+    margin-bottom: 15px; 
   }
 
   .gallery-item img {
