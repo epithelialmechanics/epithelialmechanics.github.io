@@ -120,7 +120,6 @@ images3:
     gap: 15px;
     max-width: 95%; 
     margin: 0 auto;
-    margin-bottom: 50px; 
   }
   
   .gallery-item {
@@ -149,11 +148,13 @@ images3:
     .gallery1 {
       grid-template-columns: repeat(2, 1fr); 
       max-width: 80%;
+      margin-bottom: 50px; 
     }
 
     .gallery2 {
       grid-template-columns: repeat(4, 1fr); 
       max-width: 100%;
+      margin-bottom: 50px; 
     }
 
     .gallery-item {
