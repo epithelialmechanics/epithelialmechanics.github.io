@@ -88,6 +88,8 @@ images:
 </div>
 
 
+
+
 <style>
   .gallery {
     display: grid;
@@ -109,7 +111,7 @@ images:
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
   
   .image-caption {
@@ -149,7 +151,7 @@ images:
     }
 
     .image-caption {
-      margin-top: 5px;
+   /*   margin-top: 5px; */
       font-size: 0.9em;
       color: #666; 
     }
