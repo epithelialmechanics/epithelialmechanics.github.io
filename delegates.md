@@ -75,7 +75,6 @@ images3:
   {% endfor %}
 </div>
 
-<br>
 <div class="gallery2">
   {% for image in page.images2 %}
     <div class="gallery-item">
@@ -89,7 +88,6 @@ images3:
       <div class="image-description">{{ image.origin | newline_to_br }}</div>
     </div>
   {% endfor %}
-  <br>
 </div>
 
 
@@ -100,7 +98,6 @@ images3:
       <div class="image-description">{{ image.origin | newline_to_br }}</div>
     </div>
   {% endfor %}
-  <br>
 </div>
 
 <br>
