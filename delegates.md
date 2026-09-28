@@ -121,7 +121,7 @@ images3:
   
   .gallery-item {
     text-align: center;
-    padding: 10px 0; 
+    /*padding: 10px 0; */
     border-bottom: 1px solid var(--border, #eee); 
   }
 
@@ -132,7 +132,7 @@ images3:
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;  
-   /* margin-bottom: 8px; */
+    margin-bottom: 8px; 
   }
   
   .image-description {
