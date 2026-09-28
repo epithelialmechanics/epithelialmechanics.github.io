@@ -92,7 +92,7 @@ images3:
   <br>
 </div>
 
-/*<br>*/
+
 <div class="gallery2">
   {% for image in page.images3 %}
     <div class="gallery-item">
