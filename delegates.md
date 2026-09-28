@@ -178,7 +178,7 @@ images3:
     }
     
     .image-caption {
-      margin-top: 5px;
+      /*margin-top: 8px; */
       font-size: 0.9em;
       color: #666;
     }
