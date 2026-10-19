@@ -4,6 +4,7 @@ title: Threads
 description: Discover our mini-review threads across various research fields.
 permalink: /threads/
 images: 
+  - {path: /assets/threads/20261018.png, caption: "About fluid flow ", description: "by Nimesh Chahare", date: "18/10/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3my5u7hvokl2g}
   - {path: /assets/threads/20260927.png, caption: "About theory of biological patterns ", description: "by Benjamin Swedlund", date: "27/09/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mwiox4j4kj2k}
   - {path: /assets/threads/20260906.png, caption: "About invasive epithelial migration ", description: "by Vítor Yang", date: "06/09/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3muti2y2qpc2t}
   - {path: /assets/threads/20260816.png, caption: "About T1 transitions ", description: "by Artur Ruppel", date: "16/08/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mt6mgdvjbc2w}
