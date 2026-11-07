@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Epithelial Mechanics Fan Club
+title: About
 permalink: /about/
 images:
   - /assets/img/meme2024.jpg
@@ -59,39 +59,13 @@ The Epithelial Mechanics Fan Club is currently managed by:
 
 
 <style>
-div {
-  width: 100%;
-  text-align: justify;
-}
-div a {
-  display: block; 
-  display: inline-block; 
-}
-
 ul.Manager {
-  list-style-type: disc; 
-  margin: 2rem 0 0 0;    
-  padding-left: 3.5rem; 
+  list-style-type: disc;
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
 }
 
 ul.Manager li {
-  display: list-item;    
-  margin-bottom: 2rem;   
-  text-align: justify;   
+  margin-bottom: 1.5rem;
 }
-
-@media (min-width: 600px) {
-  div {
-    text-align: justify;  
-  }
-
-  ul.Manager {
-    padding-left: 3.5rem; 
-  }
-
-  ul.Manager li {
-    text-align: justify; 
-    margin-bottom: 2rem;
-  }
-}  
 </style>

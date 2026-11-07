@@ -3,6 +3,7 @@ layout: default
 title: Threads
 description: Discover our mini-review threads across various research fields.
 permalink: /threads/
+wide: true
 images: 
   - {path: /assets/threads/20261018.png, caption: "About fluid flow ", description: "by Nimesh Chahare", date: "18/10/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3my5u7hvokl2g}
   - {path: /assets/threads/20260927.png, caption: "About theory of biological patterns ", description: "by Benjamin Swedlund", date: "27/09/2026", bluesky: https://bsky.app/profile/epimechfc.bsky.social/post/3mwiox4j4kj2k}
@@ -93,74 +94,49 @@ images:
 
 
 <style>
+  /* 2 per row on phones, 3 on tablets, 4 on desktop */
   .gallery {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    max-width: 95%; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
     margin: 0 auto;
   }
-  
+
+  @media (min-width: 600px) {
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .gallery { grid-template-columns: repeat(4, 1fr); }
+  }
+
   .gallery-item {
     text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border, #eee); 
-    margin-bottom: 5px;
+    overflow: hidden;
   }
 
   .gallery-item img {
     width: 100%;
-    max-width: 150px; 
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 8px;
+    transition: transform 0.5s ease-in-out;
   }
-  
+
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
   .image-caption {
-    font-size: 0.9em;
-    color: #666; 
+    font-size: 0.95rem;
+    line-height: 1.3;
   }
 
   .image-description {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.4;
-  }
-
-  @media (min-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(4, 1fr); 
-      max-width: 100%;
-      gap: 15px; 
-    }
-
-    .gallery-item {
-      overflow: hidden;
-      border-bottom: none;
-      padding: 0;
-      margin-bottom: 20px;
-    }
-
-    .gallery-item img {
-      max-width: 100%; 
-      aspect-ratio: 1/1;
-      border-radius: 5px; 
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-
-    .image-caption {
-      font-size: 0.9em;
-      color: #666; 
-    }
-
-    .image-description {
-      font-size: 1.1rem;
-    }
-    
   }
 </style>
 

@@ -3,6 +3,7 @@ layout: default
 title:  Delegates
 description: Meet the thread-contributing members of the Epithelial Mechanics Fan Club.
 permalink: /delegates/
+wide: true
 images1: 
   - {path: /assets/people/Nimesh_Chahare.png, caption: "Founder & Convenor ", name: "Nimesh Chahare", description: "Barcelona, Spain"}
   - {path: /assets/people/Julia_Eckert.png, caption: "Chairperson", name: "Julia Eckert",  description: "Brisbane, Australia"}
@@ -75,6 +76,8 @@ images3:
   {% endfor %}
 </div>
 
+<hr class="section-divider">
+
 <div class="gallery2">
   {% for image in page.images2 %}
     <div class="gallery-item">
@@ -114,74 +117,54 @@ images3:
 
 
 <style>
+  /* Founders: always 2 per row. Delegates: 2 on phones, 3 on tablets, 4 on desktop */
   .gallery1, .gallery2 {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    max-width: 95%; 
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+    margin: 0 auto 3rem auto;
   }
-  
+
+  @media (min-width: 600px) {
+    .gallery1 { max-width: 80%; }
+    .gallery2 { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .gallery2 { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .section-divider {
+    margin: 0 0 3rem 0;
+  }
+
   .gallery-item {
     text-align: center;
-    padding: 10px 0; 
-    border-bottom: 1px solid var(--border, #eee); 
-    margin-bottom: 5px; 
+    overflow: hidden;
   }
 
   .gallery-item img {
     width: 100%;
-    max-width: 150px; 
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 5px;  
-    margin-bottom: 8px; 
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease-in-out;
   }
-  
+
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
   .image-description {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.4;
-  }
-
-  @media (min-width: 768px) {
-    .gallery1 {
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 15px;
-      max-width: 80%;
-      margin-bottom: 50px; 
-    }
-
-    .gallery2 {
-      grid-template-columns: repeat(4, 1fr); 
-      gap: 15px;
-      max-width: 100%;
-      margin-bottom: 50px; 
-    }
-
-    .gallery-item {
-      overflow: hidden;
-      border-bottom: none; 
-      padding: 0;
-      margin-bottom: 20px;
-    }
-
-    .gallery-item img {
-      max-width: 100%; 
-      aspect-ratio: 1/1;
-      border-radius: 5px; 
-      transition: transform 0.5s ease-in-out;
-      /* margin-top: 20px; */
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-    
-    .image-caption {
-      /*margin-top: 8px; */
-      font-size: 0.9em;
-      color: #666;
-    }
   }
 </style>
 
