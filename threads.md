@@ -78,7 +78,7 @@ images:
   {% for image in page.images %}
     <div class="gallery-item">
       <a href="{{ site.baseurl }}{{ image.bluesky }}">
-        <img src="{{ site.baseurl }}{{ image.path }}"/>
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="Thread: {{ image.caption | strip }} {{ image.description }}" width="394" height="394" loading="lazy" decoding="async"/>
       </a>
       <div class="image-caption"><a href="{{ site.baseurl }}{{ image.bluesky }}">{{ image.caption }}</a></div>
       <div class="image-description">{{ image.description | newline_to_br }}</div>

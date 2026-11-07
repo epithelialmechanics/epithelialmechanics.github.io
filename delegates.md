@@ -67,7 +67,7 @@ images3:
   {% for image in page.images1 %}
     <div class="gallery-item">
       <a href="{{ site.baseurl }}{{ image.path }}">
-        <img src="{{ site.baseurl }}{{ image.path }}"/>
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" width="394" height="394" decoding="async"/>
       </a>
       <div class="image-caption">{{ image.caption }}</div>
       <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>   
@@ -82,7 +82,7 @@ images3:
   {% for image in page.images2 %}
     <div class="gallery-item">
       <a href="{{ site.baseurl }}{{ image.path }}">
-        <img src="{{ site.baseurl }}{{ image.path }}"/>
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" width="394" height="394" loading="lazy" decoding="async"/>
       </a>
       <div class="image-description"><b>{{ image.name | newline_to_br }}</b></div>
  <!--      
@@ -104,8 +104,8 @@ images3:
 </div>
 
 <div style="text-align: center;">
-  <a href="{{ site.baseurl }}/assets/people/000_Blank_world_map_Equal_Earth_projection.svg">  
-            <img src="{{ site.baseurl }} /assets/people/000_Blank_world_map_Equal_Earth_projection.svg"/>
+  <a href="{{ site.baseurl }}/assets/people/000_Blank_world_map_Equal_Earth_projection.svg">
+    <img src="{{ site.baseurl }}/assets/people/000_Blank_world_map_Equal_Earth_projection.svg" alt="World map of delegate locations" loading="lazy" decoding="async"/>
   </a>
 </div>
 
