@@ -117,7 +117,7 @@ images3:
 
 
 <style>
-  /* Founders: always 2 per row. Delegates: 2 on phones, 3 on tablets, 4 on desktop */
+  /* Founders: always 2 per row. Delegates: 3 on phones and tablets, 4 on desktop */
   .gallery1, .gallery2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -125,9 +125,19 @@ images3:
     margin: 0 auto 3rem auto;
   }
 
+  .gallery2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 0.75rem;
+  }
+
+  @media (max-width: 599px) {
+    .gallery2 .image-description {
+      font-size: 0.8rem;
+    }
+  }
+
   @media (min-width: 600px) {
     .gallery1 { max-width: 80%; }
-    .gallery2 { grid-template-columns: repeat(3, 1fr); }
   }
 
   @media (min-width: 900px) {

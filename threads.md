@@ -94,12 +94,18 @@ images:
 
 
 <style>
-  /* 2 per row on phones, 3 on tablets, 4 on desktop */
+  /* 1 per row on phones, 3 on tablets, 4 on desktop */
   .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem 1rem;
     margin: 0 auto;
+  }
+
+  @media (max-width: 599px) {
+    .gallery-item img {
+      max-width: 260px;
+    }
   }
 
   @media (min-width: 600px) {
